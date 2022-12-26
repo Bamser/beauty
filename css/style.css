@@ -14,7 +14,7 @@
 
 html {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.625vw;
+  font-size: 10px;
   font-style: normal;
   font-weight: normal;
   -webkit-animation: bugfix infinite 1s;
@@ -30,8 +30,7 @@ body {
   line-height: 1.2;
   margin: 0;
   padding: 0;
-  color: #282828;
-  background-color: #F8F8F8;
+  color: #FFFFFF;
 }
 
 input,
@@ -149,16 +148,17 @@ input[type=number] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
-.header__desc {
+.header__left--desc {
   display: flex;
   gap: 3.4rem;
 }
-.header__desc span {
+.header__left--desc span {
   max-width: 20rem;
   font-size: 1.4rem;
   line-height: 1.6;
-  color: #FFFFFF;
 }
 .header__info {
   display: flex;
@@ -193,12 +193,59 @@ input[type=number] {
   font-size: 2.2rem;
   line-height: 1.2;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
 }
 .header__phone--text {
   margin-top: 1.3rem;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.25;
-  color: #FFFFFF;
+}
+.header__desc {
+  margin-top: 6.8rem;
+  display: flex;
+  flex-direction: column;
+}
+.header__title {
+  max-width: 71rem;
+  font-family: "Kudryashev Display";
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.header__title span {
+  font-size: 8rem;
+}
+.header__text {
+  margin-top: 3rem;
+  max-width: 37.8rem;
+  font-size: 2.3rem;
+  line-height: 1.65;
+}
+.header__text span {
+  font-weight: 600;
+}
+.header__link {
+  position: relative;
+  margin-top: 10rem;
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.header__link::before {
+  content: "";
+  background-image: url(../images/header-circle.svg);
+  width: 18rem;
+  height: 16rem;
+  position: absolute;
+  top: -7rem;
+  left: -11rem;
+}
+.header__bg--circle {
+  position: absolute;
+  top: 0;
+  right: 17.5%;
 }
