@@ -87,6 +87,7 @@
         }
     }
     &__link {
+        cursor: pointer;
         position: relative;
         margin-top: 10rem;
         font-weight: 600;
@@ -94,6 +95,7 @@
         line-height: 1.2;
         letter-spacing: 0.05em;
         text-transform: uppercase;
+        z-index: 5;
         &::before {
             content: '';
             background-image: url(../images/header-circle.svg);
@@ -107,6 +109,6 @@
     &__bg--circle {
         position: absolute;
         top: 0;
-        right: 17.5%;
+        right: 3.5%;
     }
 }
