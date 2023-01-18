@@ -6,6 +6,17 @@
     background-repeat: no-repeat;
     position: relative;
     z-index: -2;
+    &::before {
+        content: '';
+        background-image: url(../images/aptos-big_line.webp);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: 5rem;
+        width: 91.3rem;
+        height: 330.5rem;
+        position: absolute;
+        z-index: -1;
+    }
     &__up {
         display: flex;
         justify-content: space-between;
@@ -228,11 +239,11 @@
         color: #22211E;
       } 
       &--title {
-        font-family: sans-serif;
+        font-family: 'Lora';
+        font-style: italic;
         margin-left: 2rem;
         padding-top: 1rem;
         width: 20rem;
-        font-style: italic;
         font-size: 3rem;
         line-height: 1.4;
         color: #1D1D1A;
