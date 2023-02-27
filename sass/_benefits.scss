@@ -1,0 +1,253 @@
+.benefits {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    &__title {
+        max-width: 75rem;
+        font-family: 'Kudryashev Display';
+        font-size: 8.5rem;
+        line-height: .9;
+        color: #1D1D1A;
+    }
+    &__items {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-left: 2.7rem;
+        margin-top: 6.5rem;
+        max-width: 31.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        color: #22211E;
+        &--image {
+
+        }
+        &--title {
+            margin-top: 2.7rem;
+            font-weight: 600;
+            font-size: 1.8rem;
+            line-height: 1.4; 
+            text-transform: uppercase;    
+        }
+        &--text {
+            margin-top: 1.5rem;
+            font-size: 1.8rem;
+            line-height: 1.8;
+        }
+    }
+}
+.examples {
+    display: flex;
+    margin-top: 12rem;
+    margin-bottom: 10rem;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/bg-dotted.webp);
+        background-repeat:no-repeat;
+        width: 52rem;
+        height: 52rem;
+        top: 0;
+        left: 35%;
+    }
+    &__comparison {
+        position: relative;
+        margin-left: 15rem;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../images/After.png);
+            background-repeat: no-repeat;
+            bottom: -7.5rem;
+            left: 0;
+            width: 27rem;
+            height: 10rem;
+            z-index: 3;
+        }
+    }
+    &__work {
+        margin-top: 7rem;
+        margin-left: 6rem;
+        &--title {
+            
+            font-family: 'Kudryashev Display';
+            font-size: 8.5rem;
+            line-height: 1;
+            letter-spacing: .5rem;
+            color: #B68C6E;
+        }
+        &--subtitle {
+            margin-left: 11rem;
+            margin-top: 1.2rem;
+            font-family: 'Kudryashev Display';
+            font-size: 12rem;
+            line-height: 1.1;
+            letter-spacing: .5rem;
+            color: #312C38;
+        }
+        &--text {
+            margin-top: 2rem;
+            margin-left: 11rem;
+            max-width: 36rem;
+            font-size: 2rem;
+            line-height: 1.84;
+            text-transform: uppercase;
+            color: #1D1D1A;
+                    & span {
+                        color: #B68C6E;
+           }
+        }
+    }
+    &__link {
+        padding-left: 1rem;
+        margin-top: 9rem;
+        margin-left: 11rem;
+        color: #1D1D1A;
+    }
+}
+
+img-comparison-slider {
+    width: 53rem;
+    height: 56rem;
+    --divider-width: 1px;
+    --divider-color: #fff;
+    --handle-position-start: 50%;
+    --default-handle-width: 70px;
+     z-index: 2;
+     box-shadow: 2px 2px 3px  rgba(0, 0, 0, 0.2);
+     }
+
+
+  .special {
+    margin-top: 8rem;
+    &__title {
+        margin: 0 auto;
+        max-width: 66.3rem;
+        text-align: center;
+        color: #1D1D1A;
+        font-family: 'Kudryashev Display';
+        font-size: 8.5rem;
+        line-height: 1.2;
+        text-transform: none;
+    }
+  }
+ 
+  .special {
+    &__slider {
+        margin-top: 4.5rem;
+    }
+}
+
+.swiper-slide {
+    & img {
+      width: 40rem;
+        height: 40rem;
+    }
+}
+
+.swiper-button-left, .swiper-button-right {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+}
+.swiper-button-left {
+    top: 17rem;
+    left: 35.5rem;
+}
+.swiper-button-right {
+    top: 17rem;
+    right: 43.7rem;
+}
+
+.swiper-slide-next {
+    position: relative;
+    transition-delay: 2s;
+    & img{
+   transform: scale(2)
+}}
+
+.swiper__white-square {
+    position: absolute;
+    top: 13%;
+    left: 30%;
+    background-color: #fff;
+    padding: 4rem 6rem 5rem 5.4rem;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.square {
+    &__title {
+        foont-weight: 500;
+        font-size: 2.5rem;
+        line-height: 172%;
+        text-align: center;
+        color: #1D1D1A;
+    }
+    &__desc {
+        padding-top: 6rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 3rem;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 2rem;
+            width: 1px;
+            height: 185px;
+            opacity: 0.7;
+            background-color: #C4C4C4;;
+        }
+    }
+    &__sale {
+        font-family: 'Kudryashev Display';
+        font-size: 12rem;
+        line-height: 112.2%;
+        letter-spacing: -0.02em;
+        color: #B68C6E;
+    }
+    &__text {
+        max-width: 30.6rem;
+        font-family: 'Kudryashev Display';
+        font-size: 6.2rem;
+        line-height: 85.7%;
+        color: #1D1D1A;
+        & span {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 3.3rem;
+            line-height: 85.7%;
+            color: #1D1D1A;
+        }
+    }
+    &__link {
+        margin-top: 4rem;
+        font-size: 2rem;
+        line-height: 172%;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #B68C6E;
+        text-align: center;
+        position: relative;
+        &:hover {
+            transform: scale(1.05);
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../images/square-arrow.svg);
+            background-repeat: no-repeat;
+            width: 1rem;
+            height: 1.2rem;
+            top: 1rem;
+            right: 17rem;
+        }
+    }
+}

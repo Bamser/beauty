@@ -83,23 +83,11 @@ position: relative;
         }
     }
     &__link {
-        position: relative;
-        cursor: pointer;
         margin-left: 19rem;
         margin-top: 12rem;
-        font-weight: 600;
-        font-size: 2.5rem;
-        line-height: 1.2;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
         color: #1D1D1A;
         z-index: 5;
         &::before {
-            content: '';
-            background-image: url(../images/problems__link.svg);
-            width: 18rem;
-            height: 16rem;
-            position: absolute;
             top: -6rem;
             left: -12rem;
         }

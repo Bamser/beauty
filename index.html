@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -11,219 +11,290 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Beauty</title>
 </head>
 
 <body>
-    <main class="main">
-        <header class="header">
-            <div class="container">
-                <div class="header__info">
-                    <div class="header__left">
-                        <div class="header__logo">
-                            <a href="#"><img src="./images/logo.svg" alt="logo"></a>
-                        </div>
-                        <div class="header__left--desc">
-                            <span>Нитевой лифтинг лица в Санкт-Петербурге</span>
-                            <span>Санкт-Петербург, пр. Просвещения, д.33, корп.2</span>
-                        </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__info">
+                <div class="header__left">
+                    <div class="header__logo">
+                        <a href="#"><img src="./images/logo.svg" alt="logo"></a>
                     </div>
-                    <div class="header__right">
-                        <div class="header__social">
-                            <a href="#"><img src="./images/Vk.svg" alt="vk"></a>
-                            <a href="#"><img src="./images/Instagram.svg" alt="instagram"></a>
-                            <a href="#"><img src="./images/WhatsApp.svg" alt="WhatsApp"></a>
-                        </div>
-                        <div class="header__phone">
-                            <div class="header__phone--number"><a href="tel:+79219676188">+7 (921) 967-61-88</a></div>
-                            <div class="header__phone--text"><a href="#">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a></div>
-                        </div>
+                    <div class="header__left--desc">
+                        <span>Нитевой лифтинг лица в Санкт-Петербурге</span>
+                        <span>Санкт-Петербург, пр. Просвещения, д.33, корп.2</span>
                     </div>
                 </div>
-                <div class="header__desc">
-                    <div class="header__title"><span>Нитевой</span> лифтинг кожи лица и шеи</div>
-                    <div class="header__text">Позвольте себе выглядеть моложе на <span>5 лет</span></div>
-                    <div class="header__link"><a href="#">Записаться</a></div>
+                <div class="header__right">
+                    <div class="header__social">
+                        <a href="#"><img src="./images/Vk.svg" alt="vk"></a>
+                        <a href="#"><img src="./images/Instagram.svg" alt="instagram"></a>
+                        <a href="#"><img src="./images/WhatsApp.svg" alt="WhatsApp"></a>
+                    </div>
+                    <div class="header__phone">
+                        <div class="header__phone--number"><a href="tel:+79219676188">+7 (921) 967-61-88</a></div>
+                        <div class="header__phone--text"><a href="#">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a></div>
+                    </div>
                 </div>
-                <div class="header__bg--circle">
+            </div>
+            <div class="header__desc">
+                <h1 class="header__title"><span>Нитевой</span> лифтинг кожи лица и шеи</h1>
+                <p class="header__text">Позвольте себе выглядеть моложе на <span>5 лет</span></p>
+                <a class="header__link link-circle" href="#">Записаться</a>
+            </div>
+        </div>
+    </header>
+    <section class="problems">
+        <div class="container">
+            <div class="problems__main">
+                <div class="problems__image">
                     <picture>
-                        <source media="(max-width: 480px)" srcset="./images/header-bg_circle-mobile.webp">
-                        <img src='./images/header-bg_circle.webp' alt='header-circle'>
+                        <source srcset="./images/problems-mobile.webp" media="(max-width: 480px)">
+                        <img src="./images/problems.webp" alt="bg">
                     </picture>
                 </div>
-            </div>
-        </header>
-        <section class="problems">
-            <div class="container">
-                <div class="problems__main">
-                    <div class="problems__image">
-                        <picture>
-                            <source srcset="./images/problems-mobile.webp" media="(max-width: 480px)">
-                            <img src="./images/problems.webp" alt="bg">
-                        </picture>
-                    </div>
-                    <div class="problems__desc">
-                        <div class="problems__desc--title">какие</div>
-                        <div class="problems__desc--subtitle">проблемы</div>
-                        <div class="problems__desc--text">решает процедура</div>
-                        <div class="problems__items">
-                            <div class="problems__item">
-                                <div class="problems__item--img"><img src="./images/problems-logo1.svg" alt="logo">
-                                </div>
-                                <div class="problems__item--text">Мелкие и глубокие морщины</div>
+                <div class="problems__desc">
+                    <h2 class="problems__desc--title">какие</h2>
+                    <h2 class="problems__desc--subtitle">проблемы</h2>
+                    <div class="problems__desc--text">решает процедура</div>
+                    <div class="problems__items">
+                        <div class="problems__item">
+                            <div class="problems__item--img"><img src="./images/problems-logo1.svg" alt="logo">
                             </div>
-                            <div class="problems__item">
-                                <div class="problems__item--img"><img src="./images/problems-logo2.svg" alt="logo">
-                                </div>
-                                <div class="problems__item--text">Обвисание кожи и нечеткий овал</div>
-                            </div>
-                            <div class="problems__item">
-                                <div class="problems__item--img"><img src="./images/problems-logo3.svg" alt="logo">
-                                </div>
-                                <div class="problems__item--text">Носогубные складки</div>
-                            </div>
-                            <div class="problems__item">
-                                <div class="problems__item--img"><img src="./images/problems-logo4.svg" alt="logo">
-                                </div>
-                                <div class="problems__item--text">Наличие брылей и второго подбородка</div>
-                            </div>
-                            <div class="problems__item">
-                                <div class="problems__item--img"><img src="./images/problems-logo5.svg" alt="logo">
-                                </div>
-                                <div class="problems__item--text">Опущение кончиков губ и бровей</div>
-                            </div>
-                            <div class="problems__item">
-                                <div class="problems__item--img"><img src="./images/problems-logo6.svg" alt="logo">
-                                </div>
-                                <div class="problems__item--text">Ассиметрия лица</div>
-                            </div>
+                            <p class="problems__item--text">Мелкие и глубокие морщины</p>
                         </div>
-                        <div class="problems__link"><a href="#">Записаться</a></div>
+                        <div class="problems__item">
+                            <div class="problems__item--img"><img src="./images/problems-logo2.svg" alt="logo">
+                            </div>
+                            <p class="problems__item--text">Обвисание кожи и нечеткий овал</p>
+                        </div>
+                        <div class="problems__item">
+                            <div class="problems__item--img"><img src="./images/problems-logo3.svg" alt="logo">
+                            </div>
+                            <p class="problems__item--text">Носогубные складки</p>
+                        </div>
+                        <div class="problems__item">
+                            <div class="problems__item--img"><img src="./images/problems-logo4.svg" alt="logo">
+                            </div>
+                            <p class="problems__item--text">Наличие брылей и второго подбородка</p>
+                        </div>
+                        <div class="problems__item">
+                            <div class="problems__item--img"><img src="./images/problems-logo5.svg" alt="logo">
+                            </div>
+                            <p class="problems__item--text">Опущение кончиков губ и бровей</p>
+                        </div>
+                        <div class="problems__item">
+                            <div class="problems__item--img"><img src="./images/problems-logo6.svg" alt="logo">
+                            </div>
+                            <p class="problems__item--text">Ассиметрия лица</p>
+                        </div>
                     </div>
+                    <div class="problems__link link-circle link-circle--brown"><a href="#">Записаться</a></div>
                 </div>
             </div>
-        </section>
-        <section class="aptos">
-            <div class="container">
-                <div class="aptos__up">
-                    <div class="aptos__image"><img src="./images/aptos-bg.webp" alt="aptos"></div>
-                    <div class="aptos__desc">
-                        <div class="aptos__desc--title">Нити</div>
-                        <div class="aptos__desc--subtitle">APTOS.</div>
-                        <div class="aptos__desc--title-text">безоперационная подтяжка лица</div>
-                        <div class="aptos__desc--text">
-                            <p>Нитевой лифтинг с помощью нитей APTOS – уникальная методика безоперационной подтяжки
-                                лица, результат от которой можно сравнить с пластической операцией.
-                                Методика позволяет за 1 визит к косметологу стереть с лица около 10 лет!
-                                Нитевой лифтинг, в отличие от операции, не требует многомесячной реабилитации, проходит
-                                безболезненно и результат можно оценить моментально.</p>
-                        </div>
+        </div>
+    </section>
+    <section class="aptos">
+        <div class="container">
+            <div class="aptos__up">
+                <div class="aptos__image"><img src="./images/aptos-bg.webp" alt="aptos"></div>
+                <div class="aptos__desc">
+                    <h2 class="aptos__desc--title">Нити</h2>
+                    <h2 class="aptos__desc--subtitle">APTOS.</h2>
+                    <h3 class="aptos__desc--title-text">безоперационная подтяжка лица</h3>
+                    <div class="aptos__desc--text">
+                        <p>Нитевой лифтинг с помощью нитей APTOS – уникальная методика безоперационной подтяжки
+                            лица, результат от которой можно сравнить с пластической операцией.
+                            Методика позволяет за 1 визит к косметологу стереть с лица около 10 лет!
+                            Нитевой лифтинг, в отличие от операции, не требует многомесячной реабилитации, проходит
+                            безболезненно и результат можно оценить моментально.</p>
                     </div>
                 </div>
-                <div class="aptos__middle">
-                    <div class="aptos__middle--left">
-                        <div class="aptos__middle--left__goldtext">Аптос изготавливаются из биологически совместимого с
-                            живыми тканями капролака, который обладает способностью самоликвидироваться и без остатка
-                            выводиться из человеческого организма в течение года.</div>
-                        <div class="aptos__middle--left__text">Сходство с иными мезонитями заключается в процедуре
-                            вживления под кожу.
-                            Она происходит следующим образом — нить протягивают при помощи тончайшей иглы и канюли,
-                            которая позволяет произвести расслоение тканей, не повреждая их.
-
-                        </div>
+            </div>
+            <div class="aptos__middle">
+                <div class="aptos__middle--left">
+                    <p class="aptos__middle--left__goldtext">Аптос изготавливаются из биологически совместимого с
+                        живыми тканями капролака, который обладает способностью самоликвидироваться и без остатка
+                        выводиться из человеческого организма в течение года.</p>
+                    <p class="aptos__middle--left__text">Сходство с иными мезонитями заключается в процедуре
+                        вживления под кожу.
+                        Она происходит следующим образом — нить протягивают при помощи тончайшей иглы и канюли,
+                        которая позволяет произвести расслоение тканей, не повреждая их.
+                    </p>
+                </div>
+                <div class="aptos__middle--right">
+                    <div class="aptos__images">
+                        <div class="aptos__small-img"><img src="./images/aptos-1.webp" alt="aptos"></div>
+                        <div class="aptos__big-img"><img src="./images/aptos-2.webp" alt="aptos"></div>
                     </div>
-                    <div class="aptos__middle--right">
-                        <div class="aptos__images">
-                            <div class="aptos__small-img"><img src="./images/aptos-1.webp" alt="aptos"></div>
-                            <div class="aptos__big-img"><img src="./images/aptos-2.webp" alt="aptos"></div>
-                        </div>
-                        <div class="aptos__middle--right-text">Кардинальное отличие Aptos от прочей подобной продукции —
-                            уникальный состав нитей, он включает L-молочную кислоту, которая создает весьма ценный
-                            добавочный эффект — запускает в тканях активный процесс естественной регенерации, тем самым
-                            стимулируя их самоомоложение.
-                        </div>
+                    <p class="aptos__middle--right-text">Кардинальное отличие Aptos от прочей подобной продукции —
+                        уникальный состав нитей, он включает L-молочную кислоту, которая создает весьма ценный
+                        добавочный эффект — запускает в тканях активный процесс естественной регенерации, тем самым
+                        стимулируя их самоомоложение.
+                    </p>
+                </div>
+            </div>
+            <div class="aptos__bottom--title">
+                <h2>Как проходит <span>процедура?</span></h2>
+            </div>
+            <div class="aptos__bottom">
+                <div class="aptos__bottom--left">
+                    <div class="aptos__bottom--left-image">
+                        <img src="./images/aptos-image.webp" alt="">
+                    </div>
+                    <div class="aptos__bottom--left-image__play">
+                        <a href="#"><img src="./images/aptos-play.png" alt=""></a>
                     </div>
                 </div>
-                <div class="aptos__bottom--title">
-                    Как проходит <span>процедура? </span>
-                </div>
-                <div class="aptos__bottom">
-                    <div class="aptos__bottom--left">
-                        <div class="aptos__bottom--left-image">
-                            <img src="./images/aptos-image.webp" alt="">
+                <div class="aptos__bottom--right">
+                    <div class="aptos__items">
+                        <div class="aptos__item">
+                            <div class="aptos__item--num">01</div>
+                            <h3 class="aptos__item--title">Знакомство и анализ</h3>
+                            <p class="aptos__item--text">
+                                Врач оценивает состояние кожи пациента. Согласовывает с пациентом количество
+                                нитей и тип установки.
+                            </p>
                         </div>
-                        <div class="aptos__bottom--left-image__play">
-                            <a href="#"><img src="./images/aptos-play.png" alt=""></a>
+                        <div class="aptos__item">
+                            <div class="aptos__item--num">02</div>
+                            <h3 class="aptos__item--title">Разметка</h3>
+                            <p class="aptos__item--text">
+                                На определенные места врач наносит линии разметки, по которым должны крепиться
+                                нити.
+                            </p>
                         </div>
-
-                    </div>
-
-                    <div class="aptos__bottom--right">
-                        <div class="aptos__items">
-                            <div class="aptos__item">
-                                <div class="aptos__item--num">01</div>
-                                <div class="aptos__item--title">Знакомство и анализ</div>
-                                <div class="aptos__item--text">
-                                    <p>Врач оценивает состояние кожи пациента. Согласовывает с пациентом количество
-                                        нитей и тип установки.</p>
-                                </div>
-                            </div>
-                            <div class="aptos__item">
-                                <div class="aptos__item--num">02</div>
-                                <div class="aptos__item--title">Разметка</div>
-                                <div class="aptos__item--text">
-                                    <p>На определенные места врач наносит линии разметки, по которым должны крепиться
-                                        нити.</p>
-                                </div>
-                            </div>
-                            <div class="aptos__item">
-                                <div class="aptos__item--num">03</div>
-                                <div class="aptos__item--title">Анестезия</div>
-                                <div class="aptos__item--text">
-                                    <p>По желанию пациента процедура проводится под местной анестезией (применяется
-                                        обезболивающий препарат).</p>
-                                </div>
-                            </div>
-                            <div class="aptos__item">
-                                <div class="aptos__item--num">04</div>
-                                <div class="aptos__item--title">Установка</div>
-                                <div class="aptos__item--text">
-                                    <p>Врач делает точечные проколы по размеченным линиям и через них с помощью канюли
-                                        (атравматическая игла-проводник), вводятся нити Аптос.</p>
-                                </div>
-                            </div>
+                        <div class="aptos__item">
+                            <div class="aptos__item--num">03</div>
+                            <h3 class="aptos__item--title">Анестезия</h3>
+                            <p class="aptos__item--text">
+                                По желанию пациента процедура проводится под местной анестезией (применяется
+                                обезболивающий препарат).
+                            </p>
                         </div>
-
-                    </div>
-
-                </div>
-                <div class="aptos__bottom--desc">
-                    <div class="aptos__bottom--desc-left">
-                        Ознакомиться со списком
-                        <span>Противопоказания к процедуре</span>
-                    </div>
-                    <div class="aptos__bottom--desc-right">
-                        <div class="aptos__bottom--desc-right__item">
-                            <div>Продолжительность процедуры:</div>
-                            <div>30-40 минут</div>
-                        </div>
-                        <div class="aptos__bottom--desc-right__item">
-                            <div>Препараты:</div>
-                            <div>инновационные нити APTOS
-                            </div>
-                        </div>
-                        <div class="aptos__bottom--desc-right__item">
-                            <div>Эффект наступает:</div>
-                            <div>после первой процедуры
-                            </div>
+                        <div class="aptos__item">
+                            <div class="aptos__item--num">04</div>
+                            <h3 class="aptos__item--title">Установка</h3>
+                            <p class="aptos__item--text">
+                                Врач делает точечные проколы по размеченным линиям и через них с помощью канюли
+                                (атравматическая игла-проводник), вводятся нити Аптос.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="aptos__bottom--desc">
+                <div class="aptos__bottom--desc-left">
+                    Ознакомиться со списком
+                    <a href="#"> <span>Противопоказания к процедуре</span></a>
+                </div>
+                <div class="aptos__bottom--desc-right">
+                    <div class="aptos__bottom--desc-right__item">
+                        <div>Продолжительность процедуры:</div>
+                        <div>30-40 минут</div>
+                    </div>
+                    <div class="aptos__bottom--desc-right__item">
+                        <div>Препараты:</div>
+                        <div>инновационные нити APTOS
+                        </div>
+                    </div>
+                    <div class="aptos__bottom--desc-right__item">
+                        <div>Эффект наступает:</div>
+                        <div>после первой процедуры
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+    <section class="benefits">
+        <div class="container">
+            <h2 class="benefits__title">Преимущества процедуры</h2>
+            <div class="benefits__items">
+                <div class="benefits__item">
+                    <div class="benefits__item--image"><img src="./images/benefits-logo1.svg" alt="benefits_logo">
+                    </div>
+                    <h3 class="benefits__item--title">Скорость</h3>
+                    <p class="benefits__item--text">
+                        Введение нитей редко длится более получаса, а потому уже вскоре вы получите заветный
+                        эффект.
+
+                    </p>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item--image"><img src="./images/benefits-logo2.svg" alt="benefits_logo">
+                    </div>
+                    <h3 class="benefits__item--title">Не нужен наркоз
+                    </h3>
+                    <p class="benefits__item--text">
+                        Достаточно местной анестезии, что существенно сокращает всевозможные риски, связанные с
+                        мощными анестетиками.
+                    </p>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item--image"><img src="./images/benefits-logo3.svg" alt="benefits_logo">
+                    </div>
+                    <h3 class="benefits__item--title">Нет вредя для здоровья</h3>
+                    <p class="benefits__item--text">
+                        Введение нитей абсолютно безопасно. Процедура не несет существенной нагрузки на организм.
+                    </p>
+                </div>
+                <div class="benefits__item">
+                    <div class="benefits__item--image"><img src="./images/benefits-logo4.svg" alt="benefits_logo">
+                    </div>
+                    <h3 class="benefits__item--title">Быстрый эффект</h3>
+                    <p class="benefits__item--text">
+                        Сразу после процедуры будут заметны изменения.
+                    </p>
+                </div>
+            </div>
+            <div class="examples">
+                <div class="examples__comparison">
+                    <img-comparison-slider>
+                        <img slot="first" width="100%" src="./images/examples-after.webp">
+                        <img slot="second" width="100%" src="./images/examples-before.webp">
+                    </img-comparison-slider>
+                </div>
+                <div class="examples__work">
+                    <h2 class="examples__work--title">Примеры</h2>
+                    <h2 class="examples__work--subtitle">работ</h2>
+                    <p class="examples__work--text">Устойчивый результат, гладкая кожа от <span>4х до 5 лет</span></p>
+                    <div class="examples__link link-circle link-circle--brown"><a href="#">Записаться</a></div>
+                </div>
+            </div>
+            <div class="special__title title">Специальное предложение</div>
+
+        </div>
+        <div class="special__slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/special1.jpg" alt=""></div>
+                <div class="swiper-slide swiper-slide--small"><img src="./images/special2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/special3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/special1.jpg" alt=""></div>
+                <div class="swiper-slide swiper-slide--small"><img src="./images/special2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/special3.jpg" alt=""></div>
+            </div>
+            <div class="swiper-button-left"><img src="./images/special-left.png" alt=""></div>
+            <div class="swiper-button-right"><img src="./images/special-right.png" alt=""></div>
+            <div class="swiper__white-square">
+                <div class="square__title">Каждый понедельник</div>
+                <div class="square__desc">
+                    <div class="square__sale">-20%</div>
+                    <div class="square__text">на все <span>процедуры</span></div>
+                </div>
+                <div class="square__link"><a href="#">Подробнее</a></div>
+            </div>
+        </div>
+    </section>
+
+    <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css" />
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

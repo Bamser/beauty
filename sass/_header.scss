@@ -6,6 +6,7 @@
     background-size: cover;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+    position: relative;
     &__left--desc  {
         display: flex;
         gap: 3.4rem;
@@ -35,6 +36,8 @@
 
     }
     &__social {
+        position: relative;
+        z-index: 2;
         display: flex;
         gap: 3.5rem;
         & img {
@@ -43,7 +46,8 @@
         }
     }
     &__phone {
-
+        position: relative;
+        z-index: 2;
         &--number {
             font-family: 'Kudryashev Display';
             font-style: normal;
@@ -87,28 +91,21 @@
         }
     }
     &__link {
-        cursor: pointer;
-        position: relative;
+        margin-left: 10rem;
         margin-top: 10rem;
-        font-weight: 600;
-        font-size: 2.5rem;
-        line-height: 1.2;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-        z-index: 5;
         &::before {
-            content: '';
-            background-image: url(../images/header-circle.svg);
-            width: 18rem;
-            height: 16rem;
-            position: absolute;
             top: -7rem;
-            left: -11rem;
+            left: -10rem;
         }
     }
-    &__bg--circle {
+    &::before {
+        content: '';
+        background: url(../images/header-bg_circle.webp);
+        background-repeat: no-repeat;
         position: absolute;
-        top: 0;
-        right: 3.5%;
+        right: 15%;
+        width: 55rem;
+        height: 55rem;
     }
 }
+
