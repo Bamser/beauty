@@ -633,7 +633,17 @@ input[type=number] {
 
 .benefits {
   margin-top: 10rem;
-  margin-bottom: 10rem;
+  margin-bottom: -15rem;
+  position: relative;
+}
+.benefits::after {
+  content: "";
+  position: absolute;
+  top: -22rem;
+  right: 20rem;
+  background-image: url(../images/benefits-bg_line.png);
+  width: 70rem;
+  height: 175rem;
 }
 .benefits__title {
   max-width: 75rem;
@@ -675,6 +685,16 @@ input[type=number] {
   margin-top: 12rem;
   margin-bottom: 10rem;
   position: relative;
+}
+.examples::before {
+  content: "";
+  position: absolute;
+  bottom: -45rem;
+  left: 27rem;
+  background-image: url(../images/slider-bg_circle.png);
+  background-repeat: no-repeat;
+  width: 27.6rem;
+  height: 27.7rem;
 }
 .examples::after {
   content: "";
@@ -764,9 +784,18 @@ img-comparison-slider {
   line-height: 1.2;
   text-transform: none;
 }
-
 .special__slider {
   margin-top: 4.5rem;
+  position: relative;
+}
+.special__slider::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/slider-bg_circle.png);
+  background-repeat: no-repeat;
+  width: 27.6rem;
+  height: 27.7rem;
+  z-index: 3;
 }
 
 .swiper-slide img {
@@ -876,4 +905,289 @@ img-comparison-slider {
   height: 1.2rem;
   top: 1rem;
   right: 17rem;
+}
+
+.price {
+  padding-top: 45rem;
+  padding-bottom: 20rem;
+  background-color: #F0E3DA;
+  position: relative;
+}
+.price::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/price-bg_line.png);
+  background-repeat: no-repeat;
+  top: -2.5rem;
+  left: 42rem;
+  width: 72rem;
+  height: 142.7rem;
+}
+.price::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/slider-bg_circle.png);
+  background-repeat: no-repeat;
+  top: 32rem;
+  right: 12rem;
+  width: 29.5rem;
+  height: 29.5rem;
+}
+.price__title {
+  max-width: 50rem;
+  font-family: "Kudryashev Display";
+  font-size: 8.5rem;
+  line-height: 0.9;
+  color: #1D1D1A;
+  text-transform: none;
+}
+.price__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.price__desc {
+  display: flex;
+  flex-direction: column;
+}
+.price__img {
+  position: relative;
+  max-width: 88rem;
+  max-height: 78rem;
+  margin-right: -15rem;
+  z-index: 2;
+}
+
+.accordeon {
+  margin-top: 4rem;
+  max-width: 30rem;
+  margin-left: 8rem;
+}
+
+summary {
+  list-style: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 112.2%;
+  text-transform: uppercase;
+  color: #1d1d1a;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 112.2%;
+  text-transform: uppercase;
+  color: #b68c6e;
+}
+
+details {
+  position: relative;
+}
+
+details img {
+  width: 197px;
+  height: 162px;
+  position: absolute;
+  right: -120px;
+  top: 20px;
+}
+
+.accordeon__title {
+  padding: 2.3rem 0;
+  cursor: pointer;
+  position: relative;
+}
+.accordeon__title:hover {
+  font-weight: 600;
+}
+
+.accordeon__text {
+  font-size: 1.8rem;
+  line-height: 1.85;
+  color: #1D1D1A;
+}
+
+details[open] summary:before {
+  content: "";
+  width: 65px;
+  height: 2px;
+  background-color: #b68c6e;
+  position: absolute;
+  top: 33px;
+  left: -80px;
+}
+
+details[open] summary::after {
+  content: "";
+  background-image: url(../images/price-price.png);
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 16.4rem;
+  position: absolute;
+  top: 0;
+  right: -22rem;
+}
+
+.action {
+  background-image: url(../images/action-bg.png);
+}
+.action__inner {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+.action__desc {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.action__desc-title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.85;
+  margin-right: 15rem;
+  text-transform: uppercase;
+}
+.action__desc-text {
+  margin-right: auto;
+  margin-left: 2rem;
+  max-width: 54.6rem;
+  margin-top: 2.7rem;
+  font-family: "Kudryashev Display";
+  font-size: 4rem;
+  line-height: 1.24;
+  letter-spacing: 0.03em;
+  color: #B68C6E;
+}
+.action__desc-figures {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  margin-left: 2rem;
+  margin-top: 5rem;
+  font-family: "Kudryashev Display";
+  font-size: 5.5rem;
+  line-height: 1.12;
+}
+.action__desc-figures span {
+  margin-left: 4rem;
+  font-size: 3.5rem;
+  line-height: 1.12;
+  color: #504339;
+}
+.action__image {
+  position: relative;
+  z-index: 1;
+  padding-top: 15rem;
+}
+.action__image::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/action-image_bg.png);
+  background-repeat: no-repeat;
+  top: 3.5rem;
+  left: -24rem;
+  width: 90.9rem;
+  height: 98.5rem;
+  z-index: -1;
+}
+.action__image img {
+  max-width: 43rem;
+  max-height: 50.2rem;
+}
+
+.action__form {
+  margin-top: 5rem;
+  margin-right: auto;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form__input {
+  padding: 3rem 4.8rem;
+  background-color: inherit;
+  font-size: 2rem;
+  border: 1px solid #B68C6E;
+  color: #fff;
+}
+.form__input::-moz-placeholder {
+  padding-left: 3rem;
+  font-size: 2rem;
+  line-height: 1.85;
+  text-transform: uppercase;
+  color: #504339;
+}
+.form__input::placeholder {
+  padding-left: 3rem;
+  font-size: 2rem;
+  line-height: 1.85;
+  text-transform: uppercase;
+  color: #504339;
+}
+
+.form__button {
+  padding: 3rem 4.8rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.85;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid #B68C6E;
+}
+.form__button:hover {
+  background-color: #B68C6E;
+}
+
+.timer {
+  margin-top: 4.5rem;
+  margin-right: auto;
+  margin-left: 2rem;
+}
+.timer__title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 1.38;
+  text-transform: uppercase;
+}
+.timer__items {
+  margin-top: 1.6rem;
+  display: flex;
+  font-size: 48px;
+}
+.timer__item {
+  position: relative;
+  min-width: 60px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+  font-family: "Kudryashev Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56.9303px;
+  text-transform: uppercase;
+  color: #b68c6e;
+}
+.timer__item::before {
+  content: attr(data-title);
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #504339;
+}
+.timer__item:not(:last-child)::after {
+  content: ":";
+  position: absolute;
+  right: -15px;
 }

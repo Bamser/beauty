@@ -1,6 +1,16 @@
 .benefits {
     margin-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: -15rem;
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        top: -22rem;
+        right: 20rem;
+        background-image: url(../images/benefits-bg_line.png);
+        width: 70rem;
+        height: 175rem;
+    }
     &__title {
         max-width: 75rem;
         font-family: 'Kudryashev Display';
@@ -44,6 +54,16 @@
     margin-top: 12rem;
     margin-bottom: 10rem;
     position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -45rem;
+        left: 27rem;
+        background-image: url(../images/slider-bg_circle.png);
+        background-repeat: no-repeat;
+        width: 27.6rem;
+        height: 27.7rem;
+    }
     &::after {
         content: '';
         position: absolute;
@@ -122,6 +142,7 @@ img-comparison-slider {
      }
 
 
+ 
   .special {
     margin-top: 8rem;
     &__title {
@@ -134,11 +155,18 @@ img-comparison-slider {
         line-height: 1.2;
         text-transform: none;
     }
-  }
- 
-  .special {
     &__slider {
         margin-top: 4.5rem;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../images/slider-bg_circle.png);
+            background-repeat: no-repeat;
+            width: 27.6rem;
+            height: 27.7rem;
+            z-index: 3;
+        }
     }
 }
 

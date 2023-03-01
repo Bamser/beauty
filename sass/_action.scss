@@ -1,0 +1,159 @@
+.action {
+
+        background-image: url(../images/action-bg.png);
+    &__inner {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        display: flex;
+        justify-content: space-between;
+    }
+  &__desc {
+
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-title {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 1.85;
+        margin-right: 15rem;
+        text-transform: uppercase;
+    }
+    &-text {
+        margin-right: auto;
+        margin-left: 2rem;
+        max-width: 54.6rem;
+        margin-top: 2.7rem;
+        font-family: 'Kudryashev Display';
+        font-size: 4rem;
+        line-height: 1.24;
+        letter-spacing: 0.03em;
+        color: #B68C6E;
+    }
+    &-figures {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
+        margin-left: 2rem;
+        margin-top: 5rem;
+        font-family: 'Kudryashev Display';
+        font-size: 5.5rem;
+        line-height: 1.12;
+        & span {
+            margin-left: 4rem;
+            font-size: 3.5rem;
+            line-height: 1.12;     
+            color: #504339;
+        }
+    }
+  }
+  &__image {
+    position: relative;
+    z-index: 1;
+    padding-top: 15rem;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/action-image_bg.png);
+        background-repeat: no-repeat;
+        top: 3.5rem;
+        left: -24rem;
+        width: 90.9rem;
+        height: 98.5rem;
+        z-index: -1;
+    }
+    & img {
+        max-width: 43rem;
+        max-height: 50.2rem;
+    }
+  }
+}
+
+.action__form {
+    margin-top: 5rem;
+    margin-right: auto;
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ }
+
+.form__input {
+    padding: 3rem 4.8rem;
+    background-color: inherit;
+    font-size: 2rem;
+    border: 1px solid #B68C6E;
+    color: #fff;
+    &::placeholder {
+        padding-left: 3rem;
+        font-size: 2rem;
+        line-height: 1.85;
+        text-transform: uppercase;
+        color: #504339;
+    }
+}
+.form__button {
+    padding: 3rem 4.8rem;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.85;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: 1px solid #B68C6E;
+    &:hover {
+        background-color: #B68C6E;
+    }
+}
+// =========================Timer=============================
+
+.timer{
+    margin-top: 4.5rem;
+    margin-right: auto;
+    margin-left: 2rem;
+    &__title {
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 1.38;
+        text-transform: uppercase;
+      }
+      &__items {
+        margin-top: 1.6rem;
+        display: flex;
+        font-size: 48px;
+      }
+      &__item {
+        position: relative;
+        min-width: 60px;
+        margin-right: 20px;
+        padding-bottom: 15px;
+        font-family: "Kudryashev Display";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56.9303px;
+        text-transform: uppercase;
+        color: #b68c6e;
+      }
+      &__item::before {
+        content: attr(data-title);
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        font-size: 14px;
+        color: #504339;
+      }
+      &__item:not(:last-child)::after {
+        content: ":";
+        position: absolute;
+        right: -15px;
+      }
+}
+
+  
+ 
+
+  

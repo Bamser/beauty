@@ -1,0 +1,128 @@
+.price {
+    padding-top: 45rem;
+    padding-bottom: 20rem;
+    background-color: #F0E3DA;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/price-bg_line.png);
+        background-repeat: no-repeat;
+        top: -2.5rem;
+        left: 42rem;
+        width: 72rem;
+        height: 142.7rem;
+        
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/slider-bg_circle.png);
+        background-repeat: no-repeat;
+        top: 32rem;
+        right: 12rem;
+        width: 29.5rem;
+        height: 29.5rem;
+        
+    }
+    &__title {
+         max-width: 50rem;
+         font-family: 'Kudryashev Display';
+         font-size: 8.5rem;
+         line-height: .9;
+         color: #1D1D1A;
+         text-transform: none;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__desc {
+        display: flex;
+        flex-direction: column;
+    }
+    &__img {
+        position: relative;
+        max-width: 88rem;
+        max-height: 78rem;
+        margin-right: -15rem;
+        z-index: 2;
+    }
+}
+
+
+// ==========================ACCORDEON=======================
+
+.accordeon {
+    margin-top: 4rem;
+    max-width: 30rem;
+    margin-left: 8rem;
+  }
+  
+  summary {
+    list-style: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 112.2%;
+    text-transform: uppercase;
+    color: #1d1d1a;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  details[open] summary {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 112.2%;
+    text-transform: uppercase;
+    color: #b68c6e;
+  }
+  details {
+    position: relative;
+  }
+  details img {
+    width: 197px;
+    height: 162px;
+    position: absolute;
+    right: -120px;
+    top: 20px;
+  }
+  .accordeon__title {
+    padding: 2.3rem 0;
+    cursor: pointer;
+    position: relative;
+    &:hover {
+        font-weight: 600;;
+    }
+  }
+  .accordeon__text {
+    font-size: 1.8rem;
+    line-height: 1.85;
+    color: #1D1D1A;
+  }
+  
+  details[open] summary:before {
+    content: "";
+    width: 65px;
+    height: 2px;
+    background-color: #b68c6e;
+    position: absolute;
+    top: 33px;
+    left: -80px;
+  }
+  
+  details[open] summary::after {
+    content: "";
+    background-image: url(../images/price-price.png);
+    background-repeat: no-repeat;
+    width: 20rem;
+    height: 16.4rem;
+    position: absolute;
+    top: 0;
+    right: -22rem;
+  }
+  
+
+  
