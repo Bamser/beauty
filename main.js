@@ -1,3 +1,5 @@
+// ===========================SLIDER================================
+
 const swiper = new Swiper('.swiper', {
 
     direction: 'horizontal',
@@ -7,13 +9,15 @@ const swiper = new Swiper('.swiper', {
    
 
     navigation: {
-      nextEl: '.swiper-button-right',
+      nextEl: '.swiper-button-right', 
       prevEl: '.swiper-button-left',
     },
-
   });
 
 
+ 
+
+// ===========================TIMER================================
 
 
   document.addEventListener('DOMContentLoaded', function() {
@@ -56,3 +60,35 @@ const swiper = new Swiper('.swiper', {
   });
   
   
+// ===========================Добавляем класс по hover в блок Team и убираем когда мыша ушла  ================================
+
+const teamHover = document.querySelector('.team__image--hover')
+const teamImage = document.querySelector('.team__image-left')
+teamImage.addEventListener('mouseover', ()=>{
+  teamHover.style.display = 'block'
+});
+
+teamHover.addEventListener('mouseout', ()=>{
+  teamHover.style.display = 'none'
+});
+
+const teamHoverCenter = document.querySelector('.team__image--hover-center')
+const teamImageCenter = document.querySelector('.team__image-center')
+teamImageCenter.addEventListener('mouseover', ()=>{
+  teamHoverCenter.style.display = 'block'
+});
+
+teamHoverCenter.addEventListener('mouseout', ()=>{
+  teamHoverCenter.style.display = 'none'
+});
+
+
+const teamHoverRight = document.querySelector('.team__image--hover-right')
+const teamImagerRight = document.querySelector('.team__image-right')
+teamImagerRight.addEventListener('mouseover', ()=>{
+  teamHoverRight.style.display = 'block'
+});
+
+teamHoverRight.addEventListener('mouseout', ()=>{
+  teamHoverRight.style.display = 'none'
+});

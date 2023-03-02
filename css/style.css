@@ -1191,3 +1191,210 @@ details[open] summary::after {
   position: absolute;
   right: -15px;
 }
+
+.art {
+  padding-top: 8rem;
+  position: relative;
+}
+.art::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/art-bg_line.svg);
+  background-repeat: no-repeat;
+  top: 0;
+  right: 30.5rem;
+  width: 68.3rem;
+  height: 251.9rem;
+}
+.art__title {
+  max-width: 73rem;
+  font-family: "Kudryashev Display";
+  font-size: 8.5rem;
+  line-height: 1.2;
+  color: #1D1D1A;
+  text-transform: none;
+}
+.art__title span {
+  color: #B68C6E;
+}
+.art__items {
+  gap: 2rem;
+}
+.art__subtitle {
+  font-size: 2rem;
+}
+.team {
+  margin-top: 18rem;
+  position: relative;
+}
+.team::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/slider-bg_circle.png);
+  background-repeat: no-repeat;
+  top: 9rem;
+  left: 12rem;
+  width: 29.5em;
+  height: 29.5em;
+}
+.team__title {
+  max-width: 43.7rem;
+  text-transform: none;
+  line-height: 1;
+  color: #1D1D1A;
+}
+.team__images {
+  display: flex;
+  justify-content: space-between;
+}
+.team__images span {
+  font-family: "Kudryashev Display";
+  font-size: 3rem;
+  line-height: 1.23;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1D1D1A;
+}
+.team__images :first-child {
+  max-width: 39.5rem;
+}
+.team__images :nth-child(2) {
+  max-width: 42rem;
+  margin-top: -30rem;
+}
+.team__images :last-child {
+  max-width: 43.5rem;
+  margin-top: 12.5rem;
+}
+.team__image {
+  position: relative;
+}
+.team__image--hover {
+  display: none;
+  position: absolute;
+  top: -7rem;
+  left: 6.5rem;
+  width: 33rem;
+  height: 39.5rem;
+  color: #000;
+  background: #FFFFFF;
+  opacity: 0.8;
+  z-index: 5;
+}
+.team__image--hover-center {
+  top: -6.9rem;
+  left: 0;
+}
+.team__image--hover-right {
+  width: 32rem;
+  height: 38rem;
+  top: -13rem;
+  left: 0;
+}
+.team__image--hover::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/team-hover.png);
+  background-repeat: no-repeat;
+  top: 16rem;
+  left: 13rem;
+  width: 8.5rem;
+  height: 8.5rem;
+}
+.team__image--hover a {
+  position: absolute;
+  padding-top: 15rem;
+  padding-left: 8rem;
+  font-size: 1.4rem;
+  line-height: 1.47;
+  text-transform: uppercase;
+}
+.team__left {
+  position: relative;
+}
+.team__left span {
+  margin-top: 4.7rem;
+  position: absolute;
+  bottom: -11rem;
+  left: 7rem;
+}
+.team__center {
+  position: relative;
+}
+.team__center span {
+  position: absolute;
+  margin-left: -5rem;
+}
+.team__right {
+  position: relative;
+}
+.team__right span {
+  position: absolute;
+  bottom: 0;
+  left: -25rem;
+}
+
+.team__close {
+  display: block;
+}
+
+.tour {
+  position: relative;
+  margin-top: 30rem;
+  margin-bottom: 10rem;
+}
+.tour::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/tour-sign.svg);
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 65rem;
+  width: 27.7rem;
+  height: 7.5rem;
+  z-index: 2;
+}
+.tour__title {
+  max-width: 54.2rem;
+  text-transform: none;
+  color: #1D1D1A;
+}
+.tour__title span {
+  color: #B68C6E;
+}
+
+.tour__slider {
+  margin-top: 1rem;
+}
+.tour__slider img {
+  width: 34rem;
+}
+
+.swiper-button-left, .swiper-button-right {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.tour__button-left {
+  top: 17rem;
+  left: 30rem;
+}
+
+.tour__button-right {
+  top: 17rem;
+  right: 27rem;
+}
+
+.tour__swiper-wrapper > .swiper-slide-next {
+  position: relative;
+  transition-delay: 2s;
+}
+.tour__swiper-wrapper > .swiper-slide-next img {
+  transform: scale(1.3);
+}
+
+.slider__link {
+  font-size: 3rem;
+  color: #1D1D1A;
+}
