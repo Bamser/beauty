@@ -142,9 +142,11 @@
     &__item-social {
    
     & img {
-
       width: 2.8rem;
       height: 1.5rem;
+      &:hover{
+        transform: scale(1.2);
+      }
   }
  }
 }

@@ -1544,3 +1544,121 @@ details[open] summary::after {
   width: 2.8rem;
   height: 1.5rem;
 }
+.slider__item-social img:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  background-color: #1D1D1A;
+}
+.footer__inner {
+  padding-top: 10rem;
+}
+.footer__items {
+  padding: 6.7rem 9rem 9.5rem 7rem;
+  background-color: #D1AE8E;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__logo {
+  width: 26.1rem;
+  height: 10rem;
+}
+.footer__text {
+  max-width: 29rem;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+.footer a:hover {
+  color: #1D1D1A;
+}
+.footer__desc {
+  display: flex;
+  flex-direction: column;
+}
+.footer__desc h3 {
+  margin-bottom: 1.3em;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.footer__desc p {
+  margin-bottom: 1.4rem;
+  max-width: 26rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.footer__desc span {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+.footer__map {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  text-decoration-line: underline;
+}
+.footer .nav__list li:first-child {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.footer .nav__list li {
+  margin-bottom: 1.7rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.footer__mail {
+  margin-bottom: 1.7rem;
+  font-size: 1.6rem;
+  line-height: 1;
+}
+.footer__phones {
+  display: flex;
+  flex-direction: column;
+}
+.footer__phones span {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.footer__phone {
+  font-family: "Kudryashev Display";
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+.footer__callback {
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-social__images img {
+  margin-right: 1.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.copyright {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: #DCD5CE;
+}
+.copyright p {
+  line-height: 1.5;
+}
+.copyright a {
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+.copyright a:hover {
+  color: #D1AE8E;
+}

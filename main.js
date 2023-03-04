@@ -20,6 +20,8 @@ $(document).ready(function(){
   $('.reviews-slider').slick({
       slidesToShow: 4,
       slidesToScroll: 1,
+      
+      // Убираем текст с навигации в новых релизах
       prevArrow: '<button type = "button" class = "slick-prev"></ button>',
       nextArrow: '<button type = "button" class = "slick-next"></ button>',
      
