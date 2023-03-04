@@ -1034,7 +1034,7 @@ details[open] summary::after {
 }
 
 .action {
-  background-image: url(../images/action-bg.png);
+  background-image: url(../images/action-bg.webp);
 }
 .action__inner {
   padding-top: 10rem;
@@ -1401,7 +1401,7 @@ details[open] summary::after {
 }
 
 .young {
-  background-image: url(../images/young-image.png);
+  background-image: url(../images/young-image.webp);
 }
 .young__inner {
   max-width: 52rem;
