@@ -61,7 +61,6 @@ position: relative;
             letter-spacing: 0.1em;
             text-transform: uppercase;
             color: #1D1D1A;
-
         }
         & :first-child {
             max-width: 39.5rem;
@@ -117,14 +116,7 @@ position: relative;
         text-transform: uppercase;
     }
    }
-   &-center {
- 
-   }
-   &-right {
-    
-    }
 }
-
     &__left {
         position: relative;
         & span {
@@ -213,4 +205,5 @@ position: relative;
     font-size: 3rem;
     color: #1D1D1A;
 }
+
 

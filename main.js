@@ -14,9 +14,17 @@ const swiper = new Swiper('.swiper', {
     },
   });
 
+// ===========================SLIDER-Reviews================================
 
- 
-
+$(document).ready(function(){
+  $('.reviews-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      prevArrow: '<button type = "button" class = "slick-prev"></ button>',
+      nextArrow: '<button type = "button" class = "slick-next"></ button>',
+     
+  });
+});
 // ===========================TIMER================================
 
 
@@ -60,10 +68,16 @@ const swiper = new Swiper('.swiper', {
   });
   
   
-// ===========================Добавляем класс по hover в блок Team и убираем когда мыша ушла  ================================
+// ===========================Добавляем класс по hover в блок Team и убираем когда мыша ушла================================
 
 const teamHover = document.querySelector('.team__image--hover')
 const teamImage = document.querySelector('.team__image-left')
+const teamHoverCenter = document.querySelector('.team__image--hover-center')
+const teamImageCenter = document.querySelector('.team__image-center')
+const teamHoverRight = document.querySelector('.team__image--hover-right')
+const teamImagerRight = document.querySelector('.team__image-right')
+
+
 teamImage.addEventListener('mouseover', ()=>{
   teamHover.style.display = 'block'
 });
@@ -72,8 +86,7 @@ teamHover.addEventListener('mouseout', ()=>{
   teamHover.style.display = 'none'
 });
 
-const teamHoverCenter = document.querySelector('.team__image--hover-center')
-const teamImageCenter = document.querySelector('.team__image-center')
+
 teamImageCenter.addEventListener('mouseover', ()=>{
   teamHoverCenter.style.display = 'block'
 });
@@ -83,8 +96,7 @@ teamHoverCenter.addEventListener('mouseout', ()=>{
 });
 
 
-const teamHoverRight = document.querySelector('.team__image--hover-right')
-const teamImagerRight = document.querySelector('.team__image-right')
+
 teamImagerRight.addEventListener('mouseover', ()=>{
   teamHoverRight.style.display = 'block'
 });
@@ -92,3 +104,5 @@ teamImagerRight.addEventListener('mouseover', ()=>{
 teamHoverRight.addEventListener('mouseout', ()=>{
   teamHoverRight.style.display = 'none'
 });
+
+

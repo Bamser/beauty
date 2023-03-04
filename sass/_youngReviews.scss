@@ -1,0 +1,150 @@
+.young {
+    background-image: url(../images/young-image.png);
+    &__inner {
+       max-width: 52rem;
+       padding-top: 16rem;
+       padding-bottom: 14.5rem;
+       display: flex;
+       flex-direction: column;
+    }
+    &__desc {}
+    &__title {
+        font-family: 'Kudryashev Display';
+        font-size: 5rem;
+        line-height: 1.29;
+        txt-align: center;
+        letter-spacing: 0.03em;
+        color: #B68C6E;
+    }
+    &__text {
+        margin-top: 2rem;
+        font-size: 1.8rem;
+        line-height: 2;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__form {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    &__input {
+        padding: 3rem 4.8rem;
+        &::placeholder {
+            padding-left: 0;
+    }
+  }
+}
+.reviews {
+    padding: 10rem 1.5rem;
+    background-color: #F0E3DA;
+    &__title {
+        max-width: 70rem;
+        color: #1D1D1A;
+        text-transform: none;
+        & span {
+            color: #B68C6E;
+        }
+    }
+}
+
+
+// ====================Slick Slider======================
+
+
+
+  /* Ограничивающая оболочка */
+  .slick-list {
+    overflow: hidden;
+  }
+  /* Лента слайдов */
+  .slick-track {
+    display: flex;
+    justify-content: space-between;
+ 
+  }
+
+  /* Конкретно это слайдер */
+  .reviews-slider {
+    min-width: 0;
+    margin-top: 8rem;
+    position: relative;
+  }
+  
+  .reviews-slider .slick-arrow {
+    position: absolute;
+    width: 9.6em;
+    height: 9.6rem;
+    opacity: 0.5;
+    font-size: 2rem;
+  }
+
+  .slick-slide.slick-active {
+    border-left: 1px solid rgba(0, 0, 0, .2);
+  }
+  .slider__item.slick-slide.slick-current {
+    border-left: none;
+  }
+  .reviews-slider .slick-arrow.slick-prev {
+    background-image: url(../images/reviews-left.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: -11rem;
+    top: 8rem;
+    text-align: center;
+
+  }
+  .reviews-slider .slick-arrow.slick-next {
+    background-image: url(../images/reviews-right.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: center;
+    right: -10.5rem;
+    top: 4em;
+  }
+  .reviews-slider__item  {
+  
+    max-width: 33.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   & img {
+    width: 12em;
+    height: 12rem;
+   }
+  }
+  
+.slider {
+  & button {
+    font-size: 30px;
+  }
+  &__item-title {
+    margin-top: 3.1rem;
+    font-family: 'Kudryashev Display';
+    font-size: 2rem;
+    line-height: 1.13;
+    color: #1D1D1A;
+  }
+  &__item-text {
+    max-width: 26.8rem;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #22211E;
+  }
+  &__item-social {
+    margin-top: 3.1rem;
+    display: flex;
+    gap: 3.6rem;
+  }
+    &__item-social {
+   
+    & img {
+
+      width: 2.8rem;
+      height: 1.5rem;
+  }
+ }
+}
