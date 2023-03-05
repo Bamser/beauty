@@ -279,7 +279,7 @@ input[type=number] {
 }
 
 .problems {
-  padding-top: 9rem;
+  padding-top: 8rem;
   margin-bottom: 16rem;
   background-image: url(../images/bg-dotted.webp);
   background-position: top center;
@@ -633,7 +633,7 @@ input[type=number] {
 }
 
 .benefits {
-  margin-top: 10rem;
+  margin-top: 8rem;
   margin-bottom: -15rem;
   position: relative;
 }
@@ -909,7 +909,7 @@ img-comparison-slider {
 }
 
 .price {
-  padding-top: 45rem;
+  padding-top: 41rem;
   padding-bottom: 20rem;
   background-color: #F0E3DA;
   position: relative;
@@ -1341,7 +1341,7 @@ details[open] summary::after {
 
 .tour {
   position: relative;
-  margin-top: 30rem;
+  margin-top: 18rem;
   margin-bottom: 10rem;
 }
 .tour::after {
