@@ -52,11 +52,11 @@
                     <span></span>
                 </label>
                 <ul class="menu__box">
-                    <li><a class="menu__item" href="#"><img src="./images/Vk.svg" alt=""></a></li>
-                    <li><a class="menu__item" href="#"><img src="./images/Instagram.svg" alt=""></a></li>
-                    <li><a class="menu__item" href="#"><img src="./images/WhatsApp.svg" alt=""></a></li>
+                    <li><a class="menu__item" href="#!"><img src="./images/Vk.svg" alt=""></a></li>
+                    <li><a class="menu__item" href="#!"><img src="./images/Instagram.svg" alt=""></a></li>
+                    <li><a class="menu__item" href="#!"><img src="./images/WhatsApp.svg" alt=""></a></li>
                     <li><a class="menu__item menu__item-tel" href="tel:+79219676188">+7 (921) 967-61-88</a></li>
-                    <li><a class="menu__item menu__item-callback" href="#">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a></li>
+                    <li><a class="menu__item menu__item-callback" href="#!">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a></li>
                 </ul>
             </div>
         </div>
@@ -111,10 +111,15 @@
             </div>
         </div>
     </section>
-    <!--    <section class="aptos">
+    <section class="aptos">
         <div class="container">
             <div class="aptos__up">
-                <div class="aptos__image"><img src="./images/aptos-bg.webp" alt="aptos"></div>
+                <div class="aptos__image">
+                    <picture>
+                        <source srcset="./images/aptos-bg_mobile.webp" media="(max-width: 1240px)">
+                        <img src="./images/aptos-bg.webp" alt="bg">
+                    </picture>
+                </div>
                 <div class="aptos__desc">
                     <h2 class="aptos__desc--title">Нити</h2>
                     <h2 class="aptos__desc--subtitle">APTOS.</h2>
@@ -224,7 +229,7 @@
             </div>
         </div>
     </section>
-    <section class="benefits">
+    <!--<section class="benefits">
         <div class="container">
             <h2 class="benefits__title">Преимущества процедуры</h2>
             <div class="benefits__items">

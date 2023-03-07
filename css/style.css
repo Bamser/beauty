@@ -31,7 +31,7 @@ body {
   line-height: 1.2;
   margin: 0;
   padding: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   position: relative;
   z-index: 0;
 }
@@ -567,6 +567,7 @@ input[type=number] {
   .problems__image {
     margin-left: 0;
     max-width: 65rem;
+    z-index: -1;
   }
   .problems__desc {
     max-width: 60rem;
@@ -607,7 +608,7 @@ input[type=number] {
 @media (max-width: 1004px) {
   .problems {
     padding-top: 3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 17rem;
   }
   .problems__main {
     flex-direction: column;
@@ -839,7 +840,7 @@ input[type=number] {
   margin-top: 32.5rem;
 }
 .aptos__big-img img {
-  height: 64.8rem;
+  max-height: 64.8rem;
 }
 .aptos__images {
   margin-top: 9rem;
@@ -960,6 +961,465 @@ input[type=number] {
   color: #1d1d1a;
 }
 
+@media (max-width: 1240px) {
+  .aptos {
+    padding-bottom: 8rem;
+  }
+  .aptos::before {
+    display: none;
+  }
+  .aptos__up {
+    display: flex;
+    justify-content: space-between;
+  }
+  .aptos__image {
+    padding-top: 8rem;
+    margin-left: 0;
+  }
+  .aptos__image img {
+    min-width: 40rem;
+  }
+  .aptos__desc {
+    margin-top: 10rem;
+    margin-left: 10rem;
+  }
+  .aptos__desc--title {
+    margin-left: -8rem;
+    font-size: 7rem;
+  }
+  .aptos__desc--subtitle {
+    margin-top: 1rem;
+    font-size: 6rem;
+  }
+  .aptos__desc--title-text {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+  .aptos__desc--text {
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .aptos__middle {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .aptos__middle--left {
+    max-width: 40rem;
+  }
+  .aptos__middle--left__goldtext {
+    margin-top: 15rem;
+    font-size: 2.5rem;
+  }
+  .aptos__middle--left__goldtext::before {
+    width: 10rem;
+    height: 9rem;
+    top: -1rem;
+    left: -1rem;
+  }
+  .aptos__middle--left__text {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+  }
+  .aptos__middle--right::before {
+    display: none;
+  }
+  .aptos__middle--right::after {
+    display: none;
+  }
+  .aptos__middle--right-text {
+    margin: 3rem auto;
+    max-width: 74rem;
+    font-size: 1.6rem;
+  }
+  .aptos__small-img {
+    margin-top: 25rem;
+  }
+  .aptos__big-img img {
+    max-height: 40rem;
+  }
+  .aptos__images {
+    margin-top: 7rem;
+    gap: 3rem;
+  }
+  .aptos__bottom::before {
+    bottom: 55rem;
+    left: -6rem;
+    z-index: -5;
+    max-width: 61rem;
+    max-height: 46rem;
+  }
+  .aptos__bottom--title {
+    margin-top: 8rem;
+    margin-left: 45rem;
+    margin-bottom: -8rem;
+    font-size: 7rem;
+  }
+  .aptos__bottom--left {
+    max-width: 70rem;
+  }
+  .aptos__bottom--left-image__play {
+    cursor: pointer;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .aptos__bottom--right {
+    max-width: 70rem;
+  }
+  .aptos__bottom--desc-left {
+    max-width: 38.5rem;
+    font-size: 1.6rem;
+  }
+  .aptos__bottom--desc-right {
+    gap: 2.2rem 0;
+  }
+  .aptos__bottom--desc-right__item {
+    max-width: 50rem;
+    font-size: 1.6rem;
+  }
+  .aptos__items {
+    margin-left: 2rem;
+    margin-top: 12rem;
+    gap: 2rem 0;
+  }
+  .aptos__item {
+    padding-left: 0.5rem;
+    max-width: 73.6rem;
+  }
+  .aptos__item--num {
+    font-size: 1.8rem;
+  }
+  .aptos__item--title {
+    max-width: 20rem;
+    font-size: 2.4rem;
+  }
+  .aptos__item--text {
+    margin-left: 0;
+    max-width: 44.4rem;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 925px) {
+  .aptos__up {
+    flex-direction: column;
+  }
+  .aptos__image {
+    text-align: center;
+    margin-top: -8rem;
+    padding-top: 0;
+    margin-left: 0;
+  }
+  .aptos__image img {
+    max-width: 50rem;
+  }
+  .aptos__desc {
+    margin-top: 4rem;
+    text-align: center;
+  }
+  .aptos__desc--title {
+    margin-left: 0;
+    font-size: 5.5rem;
+  }
+  .aptos__desc--subtitle {
+    margin-top: 1rem;
+    font-size: 4.5rem;
+  }
+  .aptos__desc--title-text {
+    font-weight: 500;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+  }
+  .aptos__desc--text {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
+  .aptos__small-img {
+    margin-top: 1rem;
+    margin-left: 20rem;
+  }
+  .aptos__small-img img {
+    max-height: 25rem;
+  }
+  .aptos__big-img img {
+    margin-top: -5rem;
+    max-height: 25rem;
+  }
+  .aptos__middle {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .aptos__middle--left {
+    margin-left: 10rem;
+    max-width: 70rem;
+  }
+  .aptos__middle--left__goldtext {
+    margin-top: 2.5rem;
+    font-size: 2rem;
+  }
+  .aptos__middle--left__goldtext::before {
+    width: 5rem;
+    height: 7rem;
+    top: 0;
+    left: -1rem;
+  }
+  .aptos__middle--right-text {
+    margin-left: 10rem;
+    max-width: 70rem;
+    font-size: 1.6rem;
+  }
+  .aptos__items {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 5rem;
+    gap: 2rem 0;
+  }
+  .aptos__bottom {
+    padding-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aptos__bottom::before {
+    bottom: 85rem;
+    left: -6rem;
+    z-index: -5;
+    max-width: 50rem;
+    max-height: 40rem;
+  }
+  .aptos__bottom--title {
+    position: absolute;
+    bottom: 95rem;
+    right: 20rem;
+    font-size: 5rem;
+  }
+  .aptos__bottom--left {
+    max-width: 35rem;
+  }
+  .aptos__bottom--left-image__play {
+    top: 40%;
+  }
+  .aptos__bottom--right {
+    padding-top: 20rem;
+    max-width: 70rem;
+  }
+  .aptos__bottom--desc {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  .aptos__item {
+    padding-left: 0.5rem;
+    max-width: 73.6rem;
+  }
+  .aptos__item--num {
+    font-size: 1.6rem;
+  }
+  .aptos__item--title {
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+  .aptos__item--text {
+    max-width: 40rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 665px) {
+  .aptos__image {
+    text-align: center;
+    margin-top: -7rem;
+  }
+  .aptos__image img {
+    min-width: 25rem;
+    max-width: 30rem;
+  }
+  .aptos__desc {
+    margin: 3rem auto;
+    text-align: center;
+  }
+  .aptos__desc--title {
+    margin-top: -1rem;
+    margin-left: 0;
+    font-size: 4rem;
+  }
+  .aptos__desc--subtitle {
+    margin-top: 0.5rem;
+    font-size: 3rem;
+  }
+  .aptos__desc--title-text {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+  .aptos__desc--text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.4rem;
+  }
+  .aptos__images {
+    margin-top: 5rem;
+    gap: 2rem;
+  }
+  .aptos__small-img {
+    margin: 0, auto;
+    margin-left: 13rem;
+  }
+  .aptos__big-img img {
+    margin-left: 0;
+    margin-top: -5rem;
+  }
+  .aptos__middle {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .aptos__middle--left {
+    margin-left: 10rem;
+  }
+  .aptos__middle--left__goldtext {
+    margin-top: -1rem;
+    font-size: 1.8rem;
+  }
+  .aptos__middle--right-text {
+    margin: 0, auto;
+    max-width: 70rem;
+    font-size: 1.4rem;
+  }
+  .aptos__middle__items {
+    margin-left: 1rem;
+    margin-top: 3rem;
+    gap: 1rem 0;
+  }
+  .aptos__middle__bottom {
+    padding-top: 3rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aptos__middle__bottom::before {
+    bottom: 85rem;
+    left: -6rem;
+    z-index: -5;
+    max-width: 50rem;
+    max-height: 40rem;
+  }
+  .aptos__middle__bottom--title {
+    position: absolute;
+    bottom: 95rem;
+    right: 20rem;
+    font-size: 5rem;
+  }
+  .aptos__middle__bottom--left {
+    max-width: 35rem;
+  }
+  .aptos__middle__bottom--left-image__play {
+    top: 40%;
+  }
+  .aptos__middle__bottom--right {
+    padding-top: 20rem;
+    max-width: 70rem;
+  }
+  .aptos__middle__bottom--desc {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+  .aptos__bottom::before {
+    bottom: 115rem;
+    left: -6rem;
+    z-index: -5;
+    max-width: 50rem;
+    max-height: 36rem;
+  }
+  .aptos__bottom--title {
+    position: absolute;
+    bottom: 105rem;
+    font-size: 4rem;
+  }
+  .aptos__bottom--left-image__play {
+    top: 50%;
+  }
+  .aptos__bottom--right {
+    padding-top: 10rem;
+  }
+  .aptos__bottom--desc {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    align-items: center;
+  }
+  .aptos__bottom--desc-right__item {
+    padding: 0;
+    max-width: 30rem;
+    font-size: 1.4rem;
+  }
+  .aptos__item {
+    position: relative;
+    flex-direction: column;
+    padding-left: 0;
+    max-width: 50rem;
+  }
+  .aptos__item--num {
+    position: absolute;
+    top: 0.7rem;
+    left: -4.5rem;
+    font-size: 1.4rem;
+  }
+  .aptos__item--title {
+    font-size: 2rem;
+  }
+  .aptos__item--text {
+    max-width: 40rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 426px) {
+  .aptos__bottom--title {
+    position: absolute;
+    right: 8rem;
+    bottom: 110rem;
+    font-size: 4rem;
+  }
+  .aptos__bottom--desc {
+    text-align: center;
+  }
+  .aptos__bottom--desc-left {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .aptos__items {
+    margin-top: 7rem;
+  }
+  .aptos__item {
+    position: relative;
+    flex-direction: column;
+    max-width: 40rem;
+  }
+  .aptos__item--num {
+    position: absolute;
+    top: 0.3rem;
+    left: -4.5rem;
+    font-size: 1.4rem;
+  }
+  .aptos__item--title {
+    line-height: 1;
+    padding-left: 0;
+    font-size: 2rem;
+  }
+  .aptos__item--text {
+    max-width: 25rem;
+    font-size: 1.4rem;
+  }
+}
 .benefits {
   margin-top: 8rem;
   margin-bottom: -15rem;

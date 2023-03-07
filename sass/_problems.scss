@@ -94,6 +94,8 @@
   }
 }
 
+//   --------------------ADAPTIVE--------------------
+
 @media (max-width: 1240px) {
   .problems {
     margin-top: 3rem;
@@ -107,6 +109,7 @@
     &__image {
       margin-left: 0;
       max-width: 65rem;
+      z-index: -1;
     }
     &__desc {
       max-width: 60rem;
@@ -149,7 +152,7 @@
 @media (max-width: 1004px) {
   .problems {
     padding-top: 3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 17rem;
     &__main {
       flex-direction: column;
       align-items: center;
