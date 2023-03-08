@@ -123,6 +123,9 @@ details[open] summary::after {
     &::after {
       display: none;
     }
+    &::before {
+      display: none;
+    }
     &__link {
       position: relative;
       font-size: 2rem;
