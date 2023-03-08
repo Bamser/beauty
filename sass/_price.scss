@@ -1,128 +1,258 @@
 .price {
-    padding-top: 41rem;
-    padding-bottom: 20rem;
-    background-color: #F0E3DA;
+  padding-top: 41rem;
+  padding-bottom: 20rem;
+  background-color: #f0e3da;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/price-bg_line.png);
+    background-repeat: no-repeat;
+    top: -2.5rem;
+    left: 42rem;
+    width: 72rem;
+    height: 142.7rem;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../images/slider-bg_circle.png);
+    background-repeat: no-repeat;
+    top: 32rem;
+    right: 12rem;
+    width: 29.5rem;
+    height: 29.5rem;
+  }
+  &__title {
+    max-width: 50rem;
+    font-family: "Kudryashev Display";
+    font-size: 8.5rem;
+    line-height: 0.9;
+    color: #1d1d1a;
+    text-transform: none;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+  }
+  &__img {
     position: relative;
-    &::before {
-        content: '';
-        position: absolute;
-        background-image: url(../images/price-bg_line.png);
-        background-repeat: no-repeat;
-        top: -2.5rem;
-        left: 42rem;
-        width: 72rem;
-        height: 142.7rem;
-        
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        background-image: url(../images/slider-bg_circle.png);
-        background-repeat: no-repeat;
-        top: 32rem;
-        right: 12rem;
-        width: 29.5rem;
-        height: 29.5rem;
-        
-    }
-    &__title {
-         max-width: 50rem;
-         font-family: 'Kudryashev Display';
-         font-size: 8.5rem;
-         line-height: .9;
-         color: #1D1D1A;
-         text-transform: none;
-    }
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-    }
-    &__desc {
-        display: flex;
-        flex-direction: column;
-    }
-    &__img {
-        position: relative;
-        max-width: 88rem;
-        max-height: 78rem;
-        margin-right: -15rem;
-        z-index: 2;
-    }
+    max-width: 88rem;
+    margin-right: -15rem;
+    z-index: 2;
+  }
 }
-
 
 // ==========================ACCORDEON=======================
 
 .accordeon {
-    margin-top: 4rem;
-    max-width: 30rem;
-    margin-left: 8rem;
+  margin-top: 4rem;
+  max-width: 30rem;
+  margin-left: 8rem;
+}
+
+summary {
+  list-style: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 112.2%;
+  text-transform: uppercase;
+  color: #1d1d1a;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 112.2%;
+  text-transform: uppercase;
+  color: #b68c6e;
+}
+details {
+  position: relative;
+}
+
+.accordeon__title {
+  padding: 2.3rem 0;
+  cursor: pointer;
+  position: relative;
+  &:hover {
+    font-weight: 600;
   }
-  
-  summary {
-    list-style: none;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 112.2%;
-    text-transform: uppercase;
-    color: #1d1d1a;
-  }
-  
-  summary::-webkit-details-marker {
-    display: none;
-  }
-  
-  details[open] summary {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 112.2%;
-    text-transform: uppercase;
-    color: #b68c6e;
-  }
-  details {
-    position: relative;
-  }
-  details img {
-    width: 197px;
-    height: 162px;
-    position: absolute;
-    right: -120px;
-    top: 20px;
-  }
-  .accordeon__title {
-    padding: 2.3rem 0;
-    cursor: pointer;
-    position: relative;
-    &:hover {
-        font-weight: 600;;
+}
+.accordeon__text {
+  font-size: 1.8rem;
+  line-height: 1.85;
+  color: #1d1d1a;
+}
+
+details[open] summary:before {
+  content: "";
+  width: 65px;
+  height: 2px;
+  background-color: #b68c6e;
+  position: absolute;
+  top: 33px;
+  left: -80px;
+}
+
+details[open] summary::after {
+  content: "";
+  background-image: url(../images/price-price.png);
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 16.4rem;
+  position: absolute;
+  top: 0;
+  right: -22rem;
+}
+
+//   --------------------ADAPTIVE--------------------
+
+@media (max-width: 1440px) {
+  .price {
+    padding-top: 30rem;
+    padding-bottom: 10rem;
+    &::after {
+      display: none;
+    }
+    &__link {
+      position: relative;
+      font-size: 2rem;
+      margin-top: 5rem;
+      &::before {
+        background-image: url(../images/price-link_mobile.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 10rem;
+        top: -4rem;
+        left: -5rem;
+      }
+    }
+    &__title {
+      max-width: 50rem;
+      font-size: 7rem;
+      line-height: 1;
+    }
+    &__img {
+      max-width: 65rem;
+      margin-right: -15rem;
     }
   }
-  .accordeon__text {
-    font-size: 1.8rem;
-    line-height: 1.85;
-    color: #1D1D1A;
-  }
-  
-  details[open] summary:before {
-    content: "";
-    width: 65px;
-    height: 2px;
-    background-color: #b68c6e;
-    position: absolute;
-    top: 33px;
-    left: -80px;
-  }
-  
-  details[open] summary::after {
-    content: "";
-    background-image: url(../images/price-price.png);
-    background-repeat: no-repeat;
-    width: 20rem;
-    height: 16.4rem;
-    position: absolute;
-    top: 0;
-    right: -22rem;
-  }
-  
 
-  
+  // ==========================ACCORDEON=======================
+
+  .accordeon {
+    margin-top: 3rem;
+    max-width: 25rem;
+  }
+
+  summary {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  details[open] summary {
+    font-size: 1.8;
+    line-height: 1;
+  }
+
+  .accordeon__title {
+    padding: 2rem 0;
+  }
+  .accordeon__text {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  details[open] summary:before {
+    width: 40px;
+    top: 2.8rem;
+    left: -4.8rem;
+  }
+
+  details[open] summary::after {
+    background-image: url(../images/price-mobile.png);
+    width: 15rem;
+    height: 12rem;
+    right: -15rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .price {
+    padding-top: 22rem;
+    padding-bottom: 8rem;
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__link {
+      position: relative;
+      font-size: 2rem;
+      margin-top: 5rem;
+      &::before {
+        background-image: url(../images/price-link_mobile.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 10rem;
+        top: -4rem;
+        left: -5rem;
+      }
+    }
+    &__title {
+      max-width: 50rem;
+      font-size: 5rem;
+    }
+    &__img {
+      margin-top: 5rem;
+      max-width: 50rem;
+    }
+  }
+
+  // ==========================ACCORDEON=======================
+
+  .accordeon {
+    margin-top: 1rem;
+    max-width: 30rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .price {
+    padding-bottom: 5rem;
+    &__title {
+      max-width: 50rem;
+      font-size: 4rem;
+      line-height: 1;
+    }
+    &__img {
+      margin-top: 2rem;
+      max-width: 30rem;
+    }
+  }
+  // ==========================ACCORDEON=======================
+
+  .accordeon {
+    margin-top: 0;
+    margin-left: 1rem;
+    max-width: 25rem;
+  }
+}
+
+@media (max-width: 435px) {
+  // ==========================ACCORDEON=======================
+
+  .accordeon {
+    margin-top: 0;
+    margin-left: 1rem;
+    max-width: 20rem;
+  }
+}

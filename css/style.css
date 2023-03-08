@@ -1909,7 +1909,7 @@ img-comparison-slider {
 }
 @media (max-width: 600px) {
   .examples {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   .examples__comparison::after {
     bottom: -8rem;
@@ -1959,7 +1959,7 @@ img-comparison-slider {
 .price {
   padding-top: 41rem;
   padding-bottom: 20rem;
-  background-color: #F0E3DA;
+  background-color: #f0e3da;
   position: relative;
 }
 .price::before {
@@ -1987,7 +1987,7 @@ img-comparison-slider {
   font-family: "Kudryashev Display";
   font-size: 8.5rem;
   line-height: 0.9;
-  color: #1D1D1A;
+  color: #1d1d1a;
   text-transform: none;
 }
 .price__inner {
@@ -2001,7 +2001,6 @@ img-comparison-slider {
 .price__img {
   position: relative;
   max-width: 88rem;
-  max-height: 78rem;
   margin-right: -15rem;
   z-index: 2;
 }
@@ -2037,14 +2036,6 @@ details {
   position: relative;
 }
 
-details img {
-  width: 197px;
-  height: 162px;
-  position: absolute;
-  right: -120px;
-  top: 20px;
-}
-
 .accordeon__title {
   padding: 2.3rem 0;
   cursor: pointer;
@@ -2057,7 +2048,7 @@ details img {
 .accordeon__text {
   font-size: 1.8rem;
   line-height: 1.85;
-  color: #1D1D1A;
+  color: #1d1d1a;
 }
 
 details[open] summary:before {
@@ -2081,6 +2072,128 @@ details[open] summary::after {
   right: -22rem;
 }
 
+@media (max-width: 1440px) {
+  .price {
+    padding-top: 30rem;
+    padding-bottom: 10rem;
+  }
+  .price::after {
+    display: none;
+  }
+  .price__link {
+    position: relative;
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+  .price__link::before {
+    background-image: url(../images/price-link_mobile.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 10rem;
+    top: -4rem;
+    left: -5rem;
+  }
+  .price__title {
+    max-width: 50rem;
+    font-size: 7rem;
+    line-height: 1;
+  }
+  .price__img {
+    max-width: 65rem;
+    margin-right: -15rem;
+  }
+  .accordeon {
+    margin-top: 3rem;
+    max-width: 25rem;
+  }
+  summary {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+  details[open] summary {
+    font-size: 1.8;
+    line-height: 1;
+  }
+  .accordeon__title {
+    padding: 2rem 0;
+  }
+  .accordeon__text {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+  details[open] summary:before {
+    width: 40px;
+    top: 2.8rem;
+    left: -4.8rem;
+  }
+  details[open] summary::after {
+    background-image: url(../images/price-mobile.png);
+    width: 15rem;
+    height: 12rem;
+    right: -15rem;
+  }
+}
+@media (max-width: 990px) {
+  .price {
+    padding-top: 22rem;
+    padding-bottom: 8rem;
+  }
+  .price__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price__link {
+    position: relative;
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+  .price__link::before {
+    background-image: url(../images/price-link_mobile.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 10rem;
+    top: -4rem;
+    left: -5rem;
+  }
+  .price__title {
+    max-width: 50rem;
+    font-size: 5rem;
+  }
+  .price__img {
+    margin-top: 5rem;
+    max-width: 50rem;
+  }
+  .accordeon {
+    margin-top: 1rem;
+    max-width: 30rem;
+  }
+}
+@media (max-width: 990px) {
+  .price {
+    padding-bottom: 5rem;
+  }
+  .price__title {
+    max-width: 50rem;
+    font-size: 4rem;
+    line-height: 1;
+  }
+  .price__img {
+    margin-top: 2rem;
+    max-width: 30rem;
+  }
+  .accordeon {
+    margin-top: 0;
+    margin-left: 1rem;
+    max-width: 25rem;
+  }
+}
+@media (max-width: 435px) {
+  .accordeon {
+    margin-top: 0;
+    margin-left: 1rem;
+    max-width: 20rem;
+  }
+}
 .action {
   background-image: url(../images/action-bg.webp);
 }
