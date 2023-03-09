@@ -1,11 +1,11 @@
 .footer {
-  background-color: #1D1D1A;
+  background-color: #1d1d1a;
   &__inner {
     padding-top: 10rem;
   }
   &__items {
     padding: 6.7rem 9rem 9.5rem 7rem;
-    background-color: #D1AE8E;
+    background-color: #d1ae8e;
     display: flex;
     justify-content: space-between;
   }
@@ -20,41 +20,41 @@
   }
   & a {
     &:hover {
-        color: #1D1D1A;
+      color: #1d1d1a;
     }
   }
   &__desc {
     display: flex;
     flex-direction: column;
     & h3 {
-        margin-bottom: 1.3em;
-        font-weight: 600;
-        font-size: 1.6rem;
-        line-height: 1.4;
-        text-transform: uppercase;
+      margin-bottom: 1.3em;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 1.4;
+      text-transform: uppercase;
     }
     & p {
-        margin-bottom: 1.4rem;
-        max-width: 26rem;
-        font-size: 1.6rem;
-        line-height: 1.4;
+      margin-bottom: 1.4rem;
+      max-width: 26rem;
+      font-size: 1.6rem;
+      line-height: 1.4;
     }
     & span {
-        margin-bottom: 1rem;
-        font-size: 1.2rem;
-        line-height: 1.3;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      line-height: 1.3;
+    }
   }
- }
- &__map {
+  &__map {
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
     line-height: 1.25;
     text-decoration-line: underline;
   }
-.nav {
+  .nav {
     &__list li:first-child {
-        font-weight: 600;
-        text-transform: uppercase;
+      font-weight: 600;
+      text-transform: uppercase;
     }
     &__list li {
       margin-bottom: 1.7rem;
@@ -62,65 +62,134 @@
       font-size: 1.6rem;
       line-height: 1.4;
     }
-    &__item {}
-    &__link {}
-}
-&__mail {
+    &__item {
+    }
+    &__link {
+    }
+  }
+  &__mail {
     margin-bottom: 1.7rem;
     font-size: 1.6rem;
     line-height: 1;
-}
-&__phones {
+  }
+  &__phones {
     display: flex;
     flex-direction: column;
     & span {
-        margin-bottom: 1rem;
-        font-weight: 500;
-        font-size: 1.2rem;
-        line-height: 1.5;
+      margin-bottom: 1rem;
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.5;
     }
-}
-&__phone {
-    font-family: 'Kudryashev Display';
+  }
+  &__phone {
+    font-family: "Kudryashev Display";
     font-weight: 700;
     font-size: 2.2rem;
     line-height: 1.8;
     letter-spacing: 0.05em;
-}
-&__callback {
+  }
+  &__callback {
     margin-top: 1rem;
     font-weight: 700;
     font-size: 1.2rem;
     line-height: 1.3;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.3 );
+    border-bottom: 1px solid rgb(255, 255, 255, 0.3);
+  }
 }
-}
-
 
 .footer-social {
-    &__images {
-        & img {
-            margin-right: 1.5rem;
-            width: 4rem;
-            height: 4rem;
-        }
+  &__images {
+    & img {
+      margin-right: 1.5rem;
+      width: 4rem;
+      height: 4rem;
     }
+  }
 }
 
-.copyright { 
-    margin-top: 2rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    color: #DCD5CE;
-    & p {
-        line-height: 1.5;
+.copyright {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  color: #dcd5ce;
+  & p {
+    line-height: 1.5;
+  }
+  & a {
+    margin-top: 1rem;
+    text-decoration: underline;
+    &:hover {
+      color: #d1ae8e;
     }
-    & a {
-        margin-top: 1rem;
-        text-decoration: underline;
-        &:hover {
-            color: #D1AE8E;
-        }
-    }
+  }
 }
 
+//   --------------------ADAPTIVE--------------------
+
+@media (max-width: 1132px) {
+  .footer {
+    background-color: #d1ae8e;
+    &__inner {
+      padding-top: 7rem;
+    }
+    &__items {
+      padding: 6.7rem 5rem 9.5rem 5rem;
+    }
+    &__item-logo {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 835px) {
+  .footer {
+    &__inner {
+      padding-top: 0;
+    }
+    &__items {
+      padding: 0;
+      padding-top: 5rem;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+    }
+    &__desc {
+      & h3 {
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+      }
+      & p {
+        max-width: 26rem;
+        font-size: 2.5rem;
+      }
+      & span {
+        font-size: 2rem;
+      }
+    }
+    &__map {
+      font-size: 2rem;
+    }
+    .nav {
+      &__list li {
+        font-size: 2rem;
+      }
+    }
+    &__mail {
+      font-size: 2rem;
+    }
+    &__phones {
+      & span {
+        font-size: 2rem;
+      }
+    }
+    &__phone {
+      font-size: 2.5rem;
+    }
+    &__callback {
+      font-size: 1.6rem;
+    }
+  }
+}
