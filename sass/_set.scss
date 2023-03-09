@@ -17,6 +17,7 @@ html {
   line-height: 1.2;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 body {
@@ -140,7 +141,7 @@ input[type="number"] {
   line-height: 1.2;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  z-index: 5;
+  z-index: 0;
   &::before {
     content: "";
     background-image: url(../images/header-circle.svg);
