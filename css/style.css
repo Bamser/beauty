@@ -3120,6 +3120,8 @@ details[open] summary::after {
 }
 .young {
   background-image: url(../images/young-image.webp);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .young__inner {
   max-width: 52rem;
@@ -3134,7 +3136,7 @@ details[open] summary::after {
   line-height: 1.29;
   txt-align: center;
   letter-spacing: 0.03em;
-  color: #B68C6E;
+  color: #b68c6e;
 }
 .young__text {
   margin-top: 2rem;
@@ -3161,15 +3163,15 @@ details[open] summary::after {
 
 .reviews {
   padding: 10rem 1.5rem;
-  background-color: #F0E3DA;
+  background-color: #f0e3da;
 }
 .reviews__title {
   max-width: 70rem;
-  color: #1D1D1A;
+  color: #1d1d1a;
   text-transform: none;
 }
 .reviews__title span {
-  color: #B68C6E;
+  color: #b68c6e;
 }
 
 /* Ограничивающая оболочка */
@@ -3243,7 +3245,7 @@ details[open] summary::after {
   font-family: "Kudryashev Display";
   font-size: 2rem;
   line-height: 1.13;
-  color: #1D1D1A;
+  color: #1d1d1a;
 }
 .slider__item-text {
   max-width: 26.8rem;
@@ -3251,7 +3253,7 @@ details[open] summary::after {
   margin-top: 1rem;
   font-size: 1.4rem;
   line-height: 1.8;
-  color: #22211E;
+  color: #22211e;
 }
 .slider__item-social {
   margin-top: 3.1rem;
@@ -3266,6 +3268,145 @@ details[open] summary::after {
   transform: scale(1.2);
 }
 
+@media (max-width: 1200px) {
+  .young {
+    min-width: 70rem;
+  }
+  .young__inner {
+    max-width: 45rem;
+  }
+  .young__title {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .young__text {
+    margin-top: 2rem;
+    font-size: 1.6rem;
+  }
+  .young__form {
+    margin-top: 3rem;
+  }
+  .young__input {
+    padding: 2rem 3.5rem;
+  }
+  .young__input::-moz-placeholder {
+    padding-left: 0;
+  }
+  .young__input::placeholder {
+    padding-left: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .young {
+    padding-bottom: 80rem;
+    background-image: url(../images/young-image_mobile.png);
+    background-position: 50% 75rem;
+    background-size: contain;
+    background-color: #000;
+  }
+  .young__inner {
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 14.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .young__desc {
+    max-width: 40rem;
+  }
+  .young__title {
+    font-size: 3.5rem;
+  }
+  .young__text {
+    font-size: 1.6rem;
+  }
+  .young__form {
+    gap: 1.5rem;
+  }
+  .young__input {
+    padding: 1.5rem 3rem;
+  }
+}
+@media (max-width: 646px) {
+  .young {
+    padding-bottom: 80rem;
+    background-image: url(../images/young-image_mobile.png);
+    background-position: 10% 75rem;
+    background-size: contain;
+    background-color: #000;
+  }
+  .young__inner {
+    padding-right: 15rem;
+  }
+  .young__desc {
+    max-width: 30rem;
+  }
+  .young__title {
+    font-size: 3rem;
+  }
+  .young__text {
+    font-size: 1.4rem;
+  }
+  .young__input {
+    padding: 1.5rem 3rem;
+  }
+  .reviews {
+    padding: 7rem 1.5rem;
+  }
+  .reviews__title {
+    max-width: 70rem;
+    font-size: 5rem;
+  }
+}
+@media (max-width: 520px) {
+  .young {
+    padding-bottom: 80rem;
+    background-image: url(../images/young-image_mobile.png);
+    background-position: 10% 60rem;
+    background-size: contain;
+    background-color: #000;
+  }
+  .young__inner {
+    padding-top: 10rem;
+    padding-right: 25rem;
+  }
+  .young__title {
+    font-size: 2rem;
+  }
+  .young__text {
+    font-size: 1.2rem;
+  }
+  .young__input {
+    max-width: 30rem;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+  }
+  .young__input::-moz-placeholder {
+    font-size: 1.6rem;
+  }
+  .young__input::placeholder {
+    font-size: 1.6rem;
+  }
+  .form__button {
+    padding: 1rem 2rem;
+    max-width: 30rem;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 400px) {
+  .young__title {
+    padding-right: 3rem;
+  }
+  .young__text {
+    padding-right: 3rem;
+  }
+  .young__inner {
+    padding-top: 5rem;
+    padding-right: 37rem;
+  }
+}
 .footer {
   background-color: #1D1D1A;
 }
