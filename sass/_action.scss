@@ -154,6 +154,23 @@
 
 //   --------------------ADAPTIVE--------------------
 
+@media (max-width: 1850px) {
+  .action {
+    &__image {
+      text-align: center;
+      &::after {
+        top: 1rem;
+        left: -24rem;
+        max-width: 40rem;
+        max-height: 40rem;
+      }
+      & img {
+        max-width: 35rem;
+      }
+    }
+  }
+}
+
 @media (max-width: 1440px) {
   .action {
     &__inner {

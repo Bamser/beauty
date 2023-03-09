@@ -19,7 +19,7 @@
     background-image: url(../images/slider-bg_circle.png);
     background-repeat: no-repeat;
     top: 32rem;
-    right: 12rem;
+    right: 40rem;
     width: 29.5rem;
     height: 29.5rem;
   }
@@ -115,6 +115,15 @@ details[open] summary::after {
 }
 
 //   --------------------ADAPTIVE--------------------
+@media (max-width: 1700px) {
+  .price {
+    &__img {
+      margin-top: 2rem;
+      margin-right: 10rem;
+      max-width: 60rem;
+    }
+  }
+}
 
 @media (max-width: 1440px) {
   .price {
@@ -146,7 +155,6 @@ details[open] summary::after {
     }
     &__img {
       max-width: 65rem;
-      margin-right: -15rem;
     }
   }
 
@@ -228,7 +236,7 @@ details[open] summary::after {
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 650px) {
   .price {
     padding-bottom: 5rem;
     &__title {
