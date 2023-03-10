@@ -2381,7 +2381,6 @@ details[open] summary::after {
 }
 .timer__item {
   position: relative;
-  max-width: 60px;
   margin-right: 20px;
   padding-bottom: 15px;
   font-family: "Kudryashev Display";
