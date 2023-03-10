@@ -141,7 +141,7 @@ img-comparison-slider {
 .special {
   margin-top: 8rem;
   &__title {
-    margin: 0 auto;
+    margin: 8rem auto;
     max-width: 66.3rem;
     text-align: center;
     color: #1d1d1a;
@@ -576,5 +576,52 @@ img-comparison-slider {
         height: 30rem;
       }
     }
+  }
+}
+
+@media (max-width: 515px) {
+  .benefits {
+    &__title {
+      font-size: 4rem;
+    }
+  }
+  .examples {
+    &__comparison {
+      margin-left: -13rem;
+      &::after {
+        bottom: -7.5rem;
+        left: 0;
+        width: 25rem;
+      }
+    }
+    &__work {
+      &--title {
+        margin-left: 0;
+        font-size: 4rem;
+      }
+      &--subtitle {
+        margin-left: 0;
+        font-size: 4rem;
+      }
+      &--text {
+        margin-left: 0;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .special {
+    margin-top: 8rem;
+    &__title {
+      font-size: 4rem;
+    }
+  }
+  img-comparison-slider {
+    margin-right: -10rem;
+    max-width: 25rem;
+    max-height: 27rem;
+    --divider-width: 1px;
+    --divider-color: #fff;
+    --handle-position-start: 50%;
+    --default-handle-width: 7rem;
   }
 }

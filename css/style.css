@@ -690,7 +690,7 @@ input[type=number] {
     gap: 1.5rem 3rem;
   }
   .problems__item {
-    min-width: 30rem;
+    max-width: 30rem;
     font-size: 1.6rem;
   }
   .problems__link {
@@ -1380,7 +1380,10 @@ input[type=number] {
     font-size: 1.4rem;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 445px) {
+  .aptos__bottom::before {
+    display: none;
+  }
   .aptos__bottom--title {
     position: absolute;
     right: 8rem;
@@ -1563,7 +1566,7 @@ img-comparison-slider {
   margin-top: 8rem;
 }
 .special__title {
-  margin: 0 auto;
+  margin: 8rem auto;
   max-width: 66.3rem;
   text-align: center;
   color: #1d1d1a;
@@ -1956,6 +1959,46 @@ img-comparison-slider {
     height: 30rem;
   }
 }
+@media (max-width: 515px) {
+  .benefits__title {
+    font-size: 4rem;
+  }
+  .examples__comparison {
+    margin-left: -13rem;
+  }
+  .examples__comparison::after {
+    bottom: -7.5rem;
+    left: 0;
+    width: 25rem;
+  }
+  .examples__work--title {
+    margin-left: 0;
+    font-size: 4rem;
+  }
+  .examples__work--subtitle {
+    margin-left: 0;
+    font-size: 4rem;
+  }
+  .examples__work--text {
+    margin-left: 0;
+    font-size: 1.6rem;
+  }
+  .special {
+    margin-top: 8rem;
+  }
+  .special__title {
+    font-size: 4rem;
+  }
+  img-comparison-slider {
+    margin-right: -10rem;
+    max-width: 25rem;
+    max-height: 27rem;
+    --divider-width: 1px;
+    --divider-color: #fff;
+    --handle-position-start: 50%;
+    --default-handle-width: 7rem;
+  }
+}
 .price {
   padding-top: 41rem;
   padding-bottom: 20rem;
@@ -2338,7 +2381,7 @@ details[open] summary::after {
 }
 .timer__item {
   position: relative;
-  min-width: 60px;
+  max-width: 60px;
   margin-right: 20px;
   padding-bottom: 15px;
   font-family: "Kudryashev Display";
@@ -2490,6 +2533,7 @@ details[open] summary::after {
     position: absolute;
     background-image: url(../images/action-bg_mobile.png);
     background-repeat: no-repeat;
+    width: 28rem;
     top: 4rem;
     left: 37rem;
   }
@@ -2580,7 +2624,7 @@ details[open] summary::after {
     margin-top: 1rem;
   }
   .timer__item {
-    min-width: 40px;
+    max-width: 40px;
     font-size: 5rem;
   }
   .timer__item::before {
@@ -3212,8 +3256,8 @@ details[open] summary::after {
   background-image: url(../images/reviews-left.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  left: -11rem;
-  top: 8rem;
+  left: 0;
+  top: -11rem;
   text-align: center;
 }
 
@@ -3222,8 +3266,8 @@ details[open] summary::after {
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
-  right: -10.5rem;
-  top: 4em;
+  right: 0;
+  top: -11rem;
 }
 
 .reviews-slider__item {
@@ -3270,7 +3314,7 @@ details[open] summary::after {
 
 @media (max-width: 1200px) {
   .young {
-    min-width: 70rem;
+    max-width: 70rem;
   }
   .young__inner {
     max-width: 45rem;
@@ -3337,9 +3381,6 @@ details[open] summary::after {
     background-size: contain;
     background-color: #000;
   }
-  .young__inner {
-    padding-right: 15rem;
-  }
   .young__desc {
     max-width: 30rem;
   }
@@ -3347,6 +3388,7 @@ details[open] summary::after {
     font-size: 3rem;
   }
   .young__text {
+    max-width: 50rem;
     font-size: 1.4rem;
   }
   .young__input {
@@ -3362,15 +3404,15 @@ details[open] summary::after {
 }
 @media (max-width: 520px) {
   .young {
-    padding-bottom: 80rem;
+    padding-bottom: 65rem;
     background-image: url(../images/young-image_mobile.png);
-    background-position: 10% 60rem;
+    background-position: 0 100%;
     background-size: contain;
     background-color: #000;
   }
   .young__inner {
     padding-top: 10rem;
-    padding-right: 25rem;
+    padding-right: 0;
   }
   .young__title {
     font-size: 2rem;
@@ -3395,7 +3437,15 @@ details[open] summary::after {
     font-size: 1.4rem;
   }
 }
+@media (max-width: 460px) {
+  .young {
+    padding-bottom: 60rem;
+  }
+}
 @media (max-width: 400px) {
+  .young {
+    padding-bottom: 50rem;
+  }
   .young__title {
     padding-right: 3rem;
   }
@@ -3405,6 +3455,11 @@ details[open] summary::after {
   .young__inner {
     padding-top: 5rem;
     padding-right: 3rem;
+  }
+}
+@media (max-width: 360px) {
+  .young {
+    padding-bottom: 40rem;
   }
 }
 .footer {

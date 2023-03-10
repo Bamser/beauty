@@ -9,8 +9,6 @@
     display: flex;
     flex-direction: column;
   }
-  &__desc {
-  }
   &__title {
     font-family: "Kudryashev Display";
     font-size: 5rem;
@@ -89,8 +87,8 @@
   background-image: url(../images/reviews-left.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  left: -11rem;
-  top: 8rem;
+  left: 0;
+  top: -11rem;
   text-align: center;
 }
 .reviews-slider .slick-arrow.slick-next {
@@ -98,8 +96,8 @@
   background-repeat: no-repeat;
   background-size: 100%;
   text-align: center;
-  right: -10.5rem;
-  top: 4em;
+  right: 0;
+  top: -11rem;
 }
 .reviews-slider__item {
   max-width: 33.5rem;
@@ -151,7 +149,7 @@
 
 @media (max-width: 1200px) {
   .young {
-    min-width: 70rem;
+    max-width: 70rem;
     &__inner {
       max-width: 45rem;
     }
@@ -209,7 +207,10 @@
     }
   }
 }
-
+@media (max-width: 715px) {
+  .young {
+  }
+}
 @media (max-width: 646px) {
   .young {
     padding-bottom: 80rem;
@@ -218,7 +219,6 @@
     background-size: contain;
     background-color: #000;
     &__inner {
-      padding-right: 15rem;
     }
     &__desc {
       max-width: 30rem;
@@ -227,6 +227,7 @@
       font-size: 3rem;
     }
     &__text {
+      max-width: 50rem;
       font-size: 1.4rem;
     }
     &__input {
@@ -244,14 +245,14 @@
 
 @media (max-width: 520px) {
   .young {
-    padding-bottom: 80rem;
+    padding-bottom: 65rem;
     background-image: url(../images/young-image_mobile.png);
-    background-position: 10% 60rem;
+    background-position: 0 100%;
     background-size: contain;
     background-color: #000;
     &__inner {
       padding-top: 10rem;
-      padding-right: 25rem;
+      padding-right: 0;
     }
     &__title {
       font-size: 2rem;
@@ -275,8 +276,15 @@
   }
 }
 
+@media (max-width: 460px) {
+  .young {
+    padding-bottom: 60rem;
+  }
+}
+
 @media (max-width: 400px) {
   .young {
+    padding-bottom: 50rem;
     &__title {
       padding-right: 3rem;
     }
@@ -287,5 +295,11 @@
       padding-top: 5rem;
       padding-right: 3rem;
     }
+  }
+}
+
+@media (max-width: 360px) {
+  .young {
+    padding-bottom: 40rem;
   }
 }

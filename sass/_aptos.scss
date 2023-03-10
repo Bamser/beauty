@@ -714,9 +714,12 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 445px) {
   .aptos {
     &__bottom {
+      &::before {
+        display: none;
+      }
       &--title {
         position: absolute;
         right: 8rem;
